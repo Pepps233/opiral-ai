@@ -1,0 +1,26 @@
+[
+  {
+    "lab_id": "purdue-cs-ninguyen",
+    "professor": "Prof. Nin Nguyen",
+    "department": "Computer Science",
+    "research_areas": ["machine learning", "computer vision", "deep learning"],
+    "contact_email": "placeholder@purdue.edu",
+    "description": "Research in deep learning architectures for visual understanding and scene recognition."
+  },
+  {
+    "lab_id": "purdue-ece-delp",
+    "professor": "Prof. Edward Delp",
+    "department": "Electrical & Computer Engineering",
+    "research_areas": ["image processing", "signal processing", "computer vision", "security"],
+    "contact_email": "placeholder@purdue.edu",
+    "description": "Video and image analysis, multimedia security, and medical imaging."
+  },
+  {
+    "lab_id": "purdue-cs-qi",
+    "professor": "Prof. Qi(Rose) Yu",
+    "department": "Computer Science",
+    "research_areas": ["spatiotemporal forecasting", "graph neural networks", "time series"],
+    "contact_email": "placeholder@purdue.edu",
+    "description": "Machine learning for spatiotemporal data including traffic and climate forecasting."
+  }
+]
