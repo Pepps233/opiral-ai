@@ -14,7 +14,12 @@ class ParsedResume(BaseModel):
     summary: Optional[str] = None
 
 
-class ResumeParseResponse(BaseModel):
+class ResumeUploadResponse(BaseModel):
     session_id: str
-    parsed: ParsedResume
-    storage_path: Optional[str] = None
+    storage_path: str
+
+
+class ResumeStatusResponse(BaseModel):
+    session_id: str
+    status: str  # "pending" | "done"
+    parsed: Optional[ParsedResume] = None
