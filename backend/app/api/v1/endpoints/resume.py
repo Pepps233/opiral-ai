@@ -69,8 +69,9 @@ async def get_resume_status(session_id: str):
 
 
 async def _parse_and_store(session_id: str, pdf_bytes: bytes) -> None:
-    """Background task: extract text, parse resume, store in sessions table."""
+    """Background task: extract text, parse resume, store in sessions table, cache embedding."""
     from app.services.resume_parser import parse_resume
+    from app.services.embeddings import embed_and_cache_resume
 
     raw_text = extract_text(pdf_bytes)
     parsed = await parse_resume(session_id, raw_text)
@@ -79,3 +80,5 @@ async def _parse_and_store(session_id: str, pdf_bytes: bytes) -> None:
     supabase.table("sessions").update({"parsed_resume": parsed.model_dump()}).eq(
         "session_id", session_id
     ).execute()
+
+    await embed_and_cache_resume(session_id, parsed)
