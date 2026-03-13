@@ -7,7 +7,7 @@ import uuid
 
 router = APIRouter()
 
-MAX_FILE_SIZE = 5 * 1024 * 1024  # 5 MB
+MAX_FILE_SIZE = 2 * 1024 * 1024  # 2 MB
 
 
 @router.post("/upload", response_model=ResumeUploadResponse)
@@ -23,7 +23,7 @@ async def upload_resume(
     pdf_bytes = await file.read()
 
     if len(pdf_bytes) > MAX_FILE_SIZE:
-        raise HTTPException(status_code=400, detail="File exceeds the 5 MB limit.")
+        raise HTTPException(status_code=400, detail="File exceeds the 2 MB limit.")
 
     session_id = str(uuid.uuid4())
     storage_path = f"resumes/{session_id}.pdf"
