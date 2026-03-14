@@ -12,7 +12,7 @@ from pinecone import Pinecone
 
 LABS_FILE = Path(__file__).parent / "labs_data.json"
 
-supabase = create_client(settings.SUPABASE_URL, settings.SUPABASE_SECRET_KEY)
+supabase = create_client(settings.SUPABASE_URL, settings.SUPABASE_SERVICE_ROLE_KEY)
 pc = Pinecone(api_key=settings.PINECONE_API_KEY)
 
 
