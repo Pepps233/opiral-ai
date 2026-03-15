@@ -4,7 +4,7 @@ from app.core.config import settings
 from app.api.v1.router import api_router
 
 app = FastAPI(
-    title="Semora AI",
+    title="Opiral AI",
     version="0.1.0",
     description="AI-powered research lab matching for Purdue students",
 )
