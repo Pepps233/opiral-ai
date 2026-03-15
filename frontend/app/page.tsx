@@ -209,10 +209,12 @@ export default function Home() {
               className={`upload-zone${dragOver ? " drag-over" : ""}`}
               style={{
                 borderRadius: "var(--radius)",
-                padding: "3.5rem 2rem",
+                padding: "2.5rem 2rem 2rem",
                 textAlign: "center",
                 cursor: "pointer",
                 backgroundColor: "var(--card)",
+                overflow: "hidden",
+                position: "relative",
               }}
               onClick={() => !isActive && inputRef.current?.click()}
               onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
@@ -226,13 +228,11 @@ export default function Home() {
                 style={{ display: "none" }}
                 onChange={onInputChange}
               />
-              <div style={{ marginBottom: "1.25rem" }}>
-                <UploadIcon />
-              </div>
-              <p style={{ fontSize: "0.95rem", fontWeight: 500, marginBottom: "0.4rem", color: "var(--foreground)" }}>
+              <DachshundPixel />
+              <p style={{ fontSize: "0.95rem", fontWeight: 500, marginBottom: "0.3rem", color: "var(--foreground)", marginTop: "1.25rem" }}>
                 Drop your resume here
               </p>
-              <p style={{ fontSize: "0.8rem", color: "var(--muted-foreground)", marginBottom: "1.5rem" }}>
+              <p style={{ fontSize: "0.8rem", color: "var(--muted-foreground)", marginBottom: "1.25rem" }}>
                 PDF only · max 2 MB
               </p>
               <button style={buttonStyle} onClick={(e) => { e.stopPropagation(); inputRef.current?.click(); }}>
@@ -313,13 +313,198 @@ function ProgressBar() {
   );
 }
 
-function UploadIcon() {
+// Pixel art dachshund drawn with a single div + box-shadow
+// Each pixel = 4px. Grid origin is top-left of the div (1px × 1px anchor).
+// Colors: B=#1a1209 (near-black body), T=#c8813a (tan), D=#0d0a04 (darkest outline)
+function DachshundPixel() {
+  // Frame 1: legs down  Frame 2: legs mid  — alternated via CSS animation
   return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="36" height="36" rx="8" fill="var(--muted)" />
-      <path d="M18 22V14M18 14L14.5 17.5M18 14L21.5 17.5" stroke="var(--muted-foreground)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-      <path d="M12 25h12" stroke="var(--muted-foreground)" strokeWidth="1.5" strokeLinecap="round"/>
-    </svg>
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "72px", position: "relative" }}>
+      <div className="dog-run" style={{
+        position: "relative",
+        width: "1px",
+        height: "1px",
+        imageRendering: "pixelated",
+      }} />
+      <style>{`
+        /* ── pixel helpers ── */
+        :root {
+          --pb: #1c1209;
+          --pt: #c8813a;
+          --pd: #0a0704;
+        }
+        /* S = pixel size */
+        .dog-run {
+          animation: dog-walk 0.28s steps(1) infinite;
+        }
+
+        /* Frame A — legs in stride */
+        .dog-run::before {
+          content: '';
+          position: absolute;
+          width: 4px; height: 4px;
+          box-shadow:
+            /* ── tail ── */
+            -16px -16px 0 var(--pd),
+            -12px -20px 0 var(--pd),
+            -8px  -20px 0 var(--pd),
+            /* ── body ── */
+            -4px  -20px 0 var(--pb),
+             0px  -20px 0 var(--pb),
+             4px  -20px 0 var(--pb),
+             8px  -20px 0 var(--pb),
+            12px  -20px 0 var(--pb),
+            16px  -20px 0 var(--pb),
+            20px  -20px 0 var(--pb),
+            -4px  -24px 0 var(--pb),
+             0px  -24px 0 var(--pb),
+             4px  -24px 0 var(--pb),
+             8px  -24px 0 var(--pb),
+            12px  -24px 0 var(--pb),
+            16px  -24px 0 var(--pb),
+            20px  -24px 0 var(--pb),
+            24px  -24px 0 var(--pb),
+            -4px  -28px 0 var(--pb),
+             0px  -28px 0 var(--pb),
+             4px  -28px 0 var(--pb),
+             8px  -28px 0 var(--pb),
+            12px  -28px 0 var(--pb),
+            16px  -28px 0 var(--pb),
+            20px  -28px 0 var(--pb),
+            24px  -28px 0 var(--pb),
+            /* ── neck + head ── */
+            24px  -32px 0 var(--pd),
+            28px  -32px 0 var(--pd),
+            20px  -32px 0 var(--pt),
+            24px  -36px 0 var(--pd),
+            28px  -36px 0 var(--pd),
+            32px  -36px 0 var(--pd),
+            28px  -40px 0 var(--pd),
+            32px  -40px 0 var(--pd),
+            /* ── snout ── */
+            32px  -32px 0 var(--pt),
+            36px  -32px 0 var(--pt),
+            36px  -28px 0 var(--pt),
+            /* ── ear ── */
+            24px  -28px 0 var(--pd),
+            28px  -28px 0 var(--pd),
+            /* ── tan chest ── */
+            20px  -24px 0 var(--pt),
+            20px  -28px 0 var(--pt),
+            /* ── front legs (stride A: one fwd one back) ── */
+            16px   -8px 0 var(--pt),
+            16px  -12px 0 var(--pd),
+            16px  -16px 0 var(--pd),
+            20px   -8px 0 var(--pt),
+            20px  -12px 0 var(--pd),
+            20px  -16px 0 var(--pd),
+            /* ── back legs (stride A) ── */
+             0px   -8px 0 var(--pt),
+             0px  -12px 0 var(--pd),
+             0px  -16px 0 var(--pd),
+             4px   -8px 0 var(--pt),
+             4px  -12px 0 var(--pd),
+             4px  -16px 0 var(--pd);
+          animation: legs-a 0.28s steps(1) infinite;
+        }
+
+        /* Frame B — legs together */
+        .dog-run::after {
+          content: '';
+          position: absolute;
+          width: 4px; height: 4px;
+          opacity: 0;
+          box-shadow:
+            /* ── tail (raised) ── */
+            -16px -20px 0 var(--pd),
+            -12px -24px 0 var(--pd),
+            -8px  -20px 0 var(--pd),
+            /* ── body (same) ── */
+            -4px  -20px 0 var(--pb),
+             0px  -20px 0 var(--pb),
+             4px  -20px 0 var(--pb),
+             8px  -20px 0 var(--pb),
+            12px  -20px 0 var(--pb),
+            16px  -20px 0 var(--pb),
+            20px  -20px 0 var(--pb),
+            -4px  -24px 0 var(--pb),
+             0px  -24px 0 var(--pb),
+             4px  -24px 0 var(--pb),
+             8px  -24px 0 var(--pb),
+            12px  -24px 0 var(--pb),
+            16px  -24px 0 var(--pb),
+            20px  -24px 0 var(--pb),
+            24px  -24px 0 var(--pb),
+            -4px  -28px 0 var(--pb),
+             0px  -28px 0 var(--pb),
+             4px  -28px 0 var(--pb),
+             8px  -28px 0 var(--pb),
+            12px  -28px 0 var(--pb),
+            16px  -28px 0 var(--pb),
+            20px  -28px 0 var(--pb),
+            24px  -28px 0 var(--pb),
+            /* ── head ── */
+            24px  -32px 0 var(--pd),
+            28px  -32px 0 var(--pd),
+            20px  -32px 0 var(--pt),
+            24px  -36px 0 var(--pd),
+            28px  -36px 0 var(--pd),
+            32px  -36px 0 var(--pd),
+            28px  -40px 0 var(--pd),
+            32px  -40px 0 var(--pd),
+            32px  -32px 0 var(--pt),
+            36px  -32px 0 var(--pt),
+            36px  -28px 0 var(--pt),
+            24px  -28px 0 var(--pd),
+            28px  -28px 0 var(--pd),
+            20px  -24px 0 var(--pt),
+            20px  -28px 0 var(--pt),
+            /* ── legs (stride B: bunched under body) ── */
+            12px  -12px 0 var(--pd),
+            12px   -8px 0 var(--pt),
+            16px  -12px 0 var(--pd),
+            16px   -8px 0 var(--pt),
+             4px  -12px 0 var(--pd),
+             4px   -8px 0 var(--pt),
+             8px  -12px 0 var(--pd),
+             8px   -8px 0 var(--pt);
+          animation: legs-b 0.28s steps(1) infinite;
+        }
+
+        @keyframes legs-a {
+          0%, 49%  { opacity: 1; }
+          50%, 100% { opacity: 0; }
+        }
+        @keyframes legs-b {
+          0%, 49%  { opacity: 0; }
+          50%, 100% { opacity: 1; }
+        }
+
+        /* horizontal run across the zone */
+        @keyframes dog-walk {
+          0%   { transform: translateX(-80px); }
+          100% { transform: translateX(80px); }
+        }
+        .dog-run {
+          animation: dog-walk 2.4s linear infinite;
+        }
+
+        /* pixelated ground dots */
+        .upload-zone::after {
+          content: '';
+          position: absolute;
+          bottom: 12px;
+          left: 0; right: 0;
+          height: 2px;
+          background: repeating-linear-gradient(
+            to right,
+            var(--border) 0px, var(--border) 4px,
+            transparent 4px, transparent 12px
+          );
+          opacity: 0.6;
+        }
+      `}</style>
+    </div>
   );
 }
 
