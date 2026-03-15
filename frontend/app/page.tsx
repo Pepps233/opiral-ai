@@ -127,7 +127,7 @@ export default function Home() {
           letterSpacing: "0.06em",
           textTransform: "uppercase",
         }}>
-          Purdue University
+          find your next lab
         </span>
       </nav>
 
@@ -251,7 +251,7 @@ export default function Home() {
           justifyContent: "center",
         }}>
           {[
-            { label: "Parse", desc: "GPT-4o extracts your skills and experience" },
+            { label: "Parse", desc: "AI extracts your skills and experience" },
             { label: "Match", desc: "Vector search across 35+ Purdue labs" },
             { label: "Email", desc: "Personalized outreach drafted instantly" },
           ].map((item, i) => (
@@ -284,7 +284,7 @@ export default function Home() {
         </span>
         <span style={{ fontSize: "0.75rem", color: "var(--border)" }}>·</span>
         <span style={{ fontSize: "0.75rem", color: "var(--muted-foreground)" }}>
-          Purdue University
+          Labs @ Purdue
         </span>
       </footer>
     </main>
