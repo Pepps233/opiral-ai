@@ -160,7 +160,7 @@ export default function EmailModal({ sessionId, labId, professor, onClose }: Ema
                 }} />
               </div>
               <p style={{ fontSize: "0.85rem", color: "var(--muted-foreground)" }}>
-                Drafting your email with GPT-4o...
+                Drafting personalized email...
               </p>
             </div>
           )}
