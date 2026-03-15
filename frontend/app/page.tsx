@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useCallback } from "react";
+import { useRef, useState, useCallback, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -313,197 +313,305 @@ function ProgressBar() {
   );
 }
 
-// Pixel art dachshund drawn with a single div + box-shadow
-// Each pixel = 4px. Grid origin is top-left of the div (1px × 1px anchor).
-// Colors: B=#1a1209 (near-black body), T=#c8813a (tan), D=#0d0a04 (darkest outline)
+// ─── Pixel Dachshund Canvas Animation ───────────────────────────────────────
+// P = 4px per pixel. Sprite coordinates in pixel-grid units.
+// Colors based on reference images
+const B  = "#2b1f14"; // dark body (near-black brown)
+const BM = "#1a1209"; // darker body shadow
+const T  = "#c8813a"; // tan markings
+const TL = "#d9a060"; // lighter tan highlight
+const EY = "#1a0f08"; // eye dark
+const NS = "#0f0905"; // nose
+const G  = "#6ab830"; // tennis ball green stripe
+const Y  = "#e8d820"; // tennis ball yellow
+
+// draw a P×P pixel at grid coords (gx, gy) with canvas origin (ox, oy)
+function px(ctx: CanvasRenderingContext2D, gx: number, gy: number, ox: number, oy: number, P: number, color: string) {
+  ctx.fillStyle = color;
+  ctx.fillRect(Math.round(ox + gx * P), Math.round(oy + gy * P), P, P);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SPRITE: Side-view standing dachshund (Image 3)
+// Grid origin = left edge of tail tip, at leg-bottom row (gy=0 = ground)
+// Total width ~18 grid units, height ~10 grid units above ground
+// ─────────────────────────────────────────────────────────────────────────────
+function drawSideBody(ctx: CanvasRenderingContext2D, ox: number, oy: number, P: number,
+  legConfig: Array<{x: number; gy: number}>) {
+  const p = (gx: number, gy: number, c: string) => px(ctx, gx, gy, ox, oy, P, c);
+
+  // ── tail: two diagonal pixels pointing down-left from body ──
+  p(0, -4, BM); p(1, -5, BM); p(1, -4, BM);
+
+  // ── long body: 3 rows tall, 10 units wide (gx 2..11) ──
+  for (let x = 2; x <= 11; x++) { p(x, -3, BM); } // top row
+  for (let x = 2; x <= 12; x++) { p(x, -4, B);  } // mid row
+  for (let x = 2; x <= 12; x++) { p(x, -5, B);  } // upper mid
+  for (let x = 2; x <= 11; x++) { p(x, -6, BM); } // upper top
+
+  // ── neck: rises from right end of body ──
+  p(11, -7, B); p(12, -7, B);
+  p(12, -8, B); p(13, -8, B);
+
+  // ── head block ──
+  p(12, -9, BM); p(13, -9, BM); p(14, -9, BM);
+  p(12,-10, BM); p(13,-10, BM); p(14,-10, BM); p(15,-10, BM);
+  p(13,-11, BM); p(14,-11, BM); p(15,-11, BM);
+  p(14,-12, BM); p(15,-12, BM);
+
+  // ── ear: drooping down from head ──
+  p(13, -8, BM); p(14, -8, BM); p(14, -7, BM); p(13, -7, BM);
+
+  // ── tan snout ──
+  p(15, -9, T); p(16, -9, T);
+  p(15, -8, T); p(16, -8, T);
+  p(16, -7, T);
+
+  // ── tan chest/neck ──
+  p(11, -5, T); p(11, -6, T); p(12, -6, T);
+
+  // ── eye ──
+  p(14,-10, EY);
+
+  // ── nose ──
+  p(16, -9, NS);
+
+  // ── legs ──
+  for (const leg of legConfig) {
+    p(leg.x,  -1, T);   // tan paw
+    p(leg.x,  -2, BM);  // upper leg dark
+    p(leg.x, leg.gy, BM); // extra segment if extended
+  }
+}
+
+// Standing pose — legs straight down
+function drawDogStanding(ctx: CanvasRenderingContext2D, ox: number, oy: number, P: number) {
+  drawSideBody(ctx, ox, oy, P, [
+    { x: 4,  gy: -3 },
+    { x: 6,  gy: -3 },
+    { x: 9,  gy: -3 },
+    { x: 11, gy: -3 },
+  ]);
+}
+
+// Run frame A — legs spread wide (back pair behind, front pair ahead)
+function drawDogRunA(ctx: CanvasRenderingContext2D, ox: number, oy: number, P: number) {
+  const p = (gx: number, gy: number, c: string) => px(ctx, gx, gy, ox, oy, P, c);
+  drawSideBody(ctx, ox, oy, P, [
+    { x: 2,  gy: -3 }, // far back leg
+    { x: 5,  gy: -3 }, // back leg
+    { x: 9,  gy: -3 }, // front leg
+    { x: 13, gy: -3 }, // far front leg
+  ]);
+  // tail up in run
+  p(0, -6, BM); p(1, -7, BM); p(1, -6, BM);
+}
+
+// Run frame B — legs tucked (mid-stride, all close together)
+function drawDogRunB(ctx: CanvasRenderingContext2D, ox: number, oy: number, P: number) {
+  const p = (gx: number, gy: number, c: string) => px(ctx, gx, gy, ox, oy, P, c);
+  drawSideBody(ctx, ox, oy, P, [
+    { x: 4,  gy: -2 },
+    { x: 6,  gy: -2 },
+    { x: 8,  gy: -2 },
+    { x: 10, gy: -2 },
+  ]);
+  // tail curves up
+  p(0, -5, BM); p(1, -6, BM);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SPRITE: Front-facing sitting dachshund (Image 4)
+// Wider, squarish — brown dog with tan oval face, dot eyes, sitting
+// Grid origin = center-bottom (gy=0 = ground under paws)
+// ─────────────────────────────────────────────────────────────────────────────
+function drawDogSitting(ctx: CanvasRenderingContext2D, ox: number, oy: number, P: number) {
+  const p = (gx: number, gy: number, c: string) => px(ctx, gx, gy, ox, oy, P, c);
+
+  // ── body: wide rounded block ──
+  p(-3,-3, B); p(-2,-3, B); p(-1,-3, B); p(0,-3, B); p(1,-3, B); p(2,-3, B); p(3,-3, B);
+  p(-3,-4, B); p(-2,-4, B); p(-1,-4, B); p(0,-4, B); p(1,-4, B); p(2,-4, B); p(3,-4, B);
+  p(-2,-5, B); p(-1,-5, B); p(0,-5, B); p(1,-5, B); p(2,-5, B);
+
+  // ── tan belly ──
+  p(-1,-3, TL); p(0,-3, TL); p(1,-3, TL);
+  p(-1,-4, T);  p(0,-4, T);  p(1,-4, T);
+
+  // ── front paws ──
+  p(-2,-1, B); p(-1,-1, B); p(-1,-2, B); p(-2,-2, B);
+  p(1,-1, B);  p(2,-1, B);  p(1,-2, B);  p(2,-2, B);
+  p(-1, 0, T); p(0, 0, T); p(1, 0, T); // tan paw tips
+
+  // ── neck ──
+  p(-1,-5, B); p(0,-5, B); p(1,-5, B);
+  p(-1,-6, B); p(0,-6, B); p(1,-6, B);
+
+  // ── head: round block ──
+  p(-3,-7, B); p(-2,-7, B); p(-1,-7, B); p(0,-7, B); p(1,-7, B); p(2,-7, B); p(3,-7, B);
+  p(-3,-8, B); p(-2,-8, B); p(-1,-8, B); p(0,-8, B); p(1,-8, B); p(2,-8, B); p(3,-8, B);
+  p(-3,-9, B); p(-2,-9, B); p(-1,-9, B); p(0,-9, B); p(1,-9, B); p(2,-9, B); p(3,-9, B);
+  p(-2,-10,B); p(-1,-10,B); p(0,-10,B); p(1,-10,B); p(2,-10,B);
+
+  // ── tan face oval ──
+  p(-1,-7, T); p(0,-7, T); p(1,-7, T);
+  p(-2,-8, T); p(-1,-8, T); p(0,-8, T); p(1,-8, T); p(2,-8, T);
+  p(-1,-9, T); p(0,-9, T); p(1,-9, T);
+
+  // ── eyes ──
+  p(-1,-9, EY); p(1,-9, EY);
+
+  // ── nose ──
+  p(0,-7, NS);
+
+  // ── ears: drooping on each side ──
+  p(-3,-9, BM); p(-4,-8, BM); p(-4,-7, BM); p(-3,-7, BM);
+  p(3,-9, BM);  p(4,-8, BM);  p(4,-7, BM);  p(3,-7, BM);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Tennis ball
+// ─────────────────────────────────────────────────────────────────────────────
+function drawTennisBall(ctx: CanvasRenderingContext2D, ox: number, oy: number, P: number) {
+  const p = (gx: number, gy: number, c: string) => px(ctx, gx, gy, ox, oy, P, c);
+  p(1, 0, Y); p(2, 0, Y); p(3, 0, Y);
+  p(0, 1, Y); p(1, 1, G); p(2, 1, Y); p(3, 1, G); p(4, 1, Y);
+  p(0, 2, Y); p(1, 2, Y); p(2, 2, Y); p(3, 2, Y); p(4, 2, Y);
+  p(0, 3, Y); p(1, 3, G); p(2, 3, Y); p(3, 3, G); p(4, 3, Y);
+  p(1, 4, Y); p(2, 4, Y); p(3, 4, Y);
+}
+
 function DachshundPixel() {
-  // Frame 1: legs down  Frame 2: legs mid  — alternated via CSS animation
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
+    if (!ctx) return;
+
+    const P = 4; // pixels per grid unit
+    const W = canvas.width;
+    const H = canvas.height;
+    const GROUND = H - 14; // y baseline for feet
+
+    // Animation phases (all times in ms)
+    // 0–1200  : sitting (dog at center-left, ball off-right hidden)
+    // 1200–1600: stand up (dog rises, ball appears right)
+    // 1600–1800: lunge (dog starts moving right fast)
+    // 1800–3400: run across screen (dog exits right, ball exits right)
+    // 3400–3600: dog reappears from left, still running
+    // 3600–4200: dog slows, reaches sit position at center-left
+    // 4200–5400: sit again → loop (total = 5400ms)
+    const LOOP = 5400;
+
+    let startTime: number | null = null;
+    let rafId: number;
+
+    function lerp(a: number, b: number, t: number) { return a + (b - a) * Math.min(1, Math.max(0, t)); }
+    function easeOut(t: number) { return 1 - (1 - t) * (1 - t); }
+    function easeIn(t: number) { return t * t; }
+
+    function draw(ts: number) {
+      if (!startTime) startTime = ts;
+      const elapsed = (ts - startTime) % LOOP;
+
+      ctx.clearRect(0, 0, W, H);
+
+      // ── ground dots ──
+      ctx.fillStyle = "#e4e2dd";
+      for (let x = 0; x < W; x += 8) {
+        ctx.fillRect(x, GROUND + 6, 4, 2);
+      }
+
+      // ── determine phase ──
+      let dogX: number;
+      let dogPose: "sit" | "stand" | "runA" | "runB";
+      const legFrame = Math.floor(elapsed / 140) % 2; // run leg toggle
+      let ballX: number = -100;
+      let ballVisible = false;
+      const sitX = 80;      // dog sits here
+      const ballRestX = W - 60; // ball rests here
+
+      if (elapsed < 1200) {
+        // sitting still
+        dogX = sitX;
+        dogPose = "sit";
+        ballVisible = false;
+      } else if (elapsed < 1600) {
+        // stand up + ball appears
+        const t = (elapsed - 1200) / 400;
+        dogX = sitX;
+        dogPose = easeOut(t) > 0.5 ? "stand" : "sit";
+        ballVisible = t > 0.3;
+        ballX = ballRestX;
+      } else if (elapsed < 1800) {
+        // lunge start
+        const t = (elapsed - 1600) / 200;
+        dogX = lerp(sitX, sitX + 30, easeIn(t));
+        dogPose = legFrame === 0 ? "runA" : "runB";
+        ballVisible = true;
+        ballX = ballRestX;
+      } else if (elapsed < 3400) {
+        // full run — dog chases ball across screen
+        const t = (elapsed - 1800) / 1600;
+        dogX = lerp(sitX + 30, W + 80, t);
+        ballX = lerp(ballRestX, W + 120, t * 0.85);
+        dogPose = legFrame === 0 ? "runA" : "runB";
+        ballVisible = ballX < W + 60;
+      } else if (elapsed < 3600) {
+        // dog wraps from right to left (invisible during transition)
+        dogX = -80;
+        dogPose = legFrame === 0 ? "runA" : "runB";
+        ballVisible = false;
+        ballX = -100;
+      } else if (elapsed < 4600) {
+        // dog runs in from left, decelerates toward sit position
+        const t = (elapsed - 3600) / 1000;
+        dogX = lerp(-60, sitX, easeOut(t));
+        dogPose = t > 0.75 ? "stand" : (legFrame === 0 ? "runA" : "runB");
+        ballVisible = false;
+        ballX = -100;
+      } else {
+        // settle back into sit
+        const t = (elapsed - 4600) / 800;
+        dogX = sitX;
+        dogPose = easeOut(t) > 0.5 ? "sit" : "stand";
+        ballVisible = false;
+        ballX = -100;
+      }
+
+      // ── draw tennis ball ──
+      if (ballVisible) {
+        drawTennisBall(ctx, ballX, GROUND - 5 * P, P);
+      }
+
+      // ── draw dog ──
+      const dogOY = GROUND - 7 * P;
+      if (dogPose === "sit") {
+        drawDogSitting(ctx, dogX, GROUND - 7 * P, P);
+      } else if (dogPose === "stand") {
+        drawDogStanding(ctx, dogX, dogOY, P);
+      } else if (dogPose === "runA") {
+        drawDogRunA(ctx, dogX, dogOY, P);
+      } else {
+        drawDogRunB(ctx, dogX, dogOY, P);
+      }
+
+      rafId = requestAnimationFrame(draw);
+    }
+
+    rafId = requestAnimationFrame(draw);
+    return () => cancelAnimationFrame(rafId);
+  }, []);
+
   return (
-    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "72px", position: "relative" }}>
-      <div className="dog-run" style={{
-        position: "relative",
-        width: "1px",
-        height: "1px",
-        imageRendering: "pixelated",
-      }} />
-      <style>{`
-        /* ── pixel helpers ── */
-        :root {
-          --pb: #1c1209;
-          --pt: #c8813a;
-          --pd: #0a0704;
-        }
-        /* S = pixel size */
-        .dog-run {
-          animation: dog-walk 0.28s steps(1) infinite;
-        }
-
-        /* Frame A — legs in stride */
-        .dog-run::before {
-          content: '';
-          position: absolute;
-          width: 4px; height: 4px;
-          box-shadow:
-            /* ── tail ── */
-            -16px -16px 0 var(--pd),
-            -12px -20px 0 var(--pd),
-            -8px  -20px 0 var(--pd),
-            /* ── body ── */
-            -4px  -20px 0 var(--pb),
-             0px  -20px 0 var(--pb),
-             4px  -20px 0 var(--pb),
-             8px  -20px 0 var(--pb),
-            12px  -20px 0 var(--pb),
-            16px  -20px 0 var(--pb),
-            20px  -20px 0 var(--pb),
-            -4px  -24px 0 var(--pb),
-             0px  -24px 0 var(--pb),
-             4px  -24px 0 var(--pb),
-             8px  -24px 0 var(--pb),
-            12px  -24px 0 var(--pb),
-            16px  -24px 0 var(--pb),
-            20px  -24px 0 var(--pb),
-            24px  -24px 0 var(--pb),
-            -4px  -28px 0 var(--pb),
-             0px  -28px 0 var(--pb),
-             4px  -28px 0 var(--pb),
-             8px  -28px 0 var(--pb),
-            12px  -28px 0 var(--pb),
-            16px  -28px 0 var(--pb),
-            20px  -28px 0 var(--pb),
-            24px  -28px 0 var(--pb),
-            /* ── neck + head ── */
-            24px  -32px 0 var(--pd),
-            28px  -32px 0 var(--pd),
-            20px  -32px 0 var(--pt),
-            24px  -36px 0 var(--pd),
-            28px  -36px 0 var(--pd),
-            32px  -36px 0 var(--pd),
-            28px  -40px 0 var(--pd),
-            32px  -40px 0 var(--pd),
-            /* ── snout ── */
-            32px  -32px 0 var(--pt),
-            36px  -32px 0 var(--pt),
-            36px  -28px 0 var(--pt),
-            /* ── ear ── */
-            24px  -28px 0 var(--pd),
-            28px  -28px 0 var(--pd),
-            /* ── tan chest ── */
-            20px  -24px 0 var(--pt),
-            20px  -28px 0 var(--pt),
-            /* ── front legs (stride A: one fwd one back) ── */
-            16px   -8px 0 var(--pt),
-            16px  -12px 0 var(--pd),
-            16px  -16px 0 var(--pd),
-            20px   -8px 0 var(--pt),
-            20px  -12px 0 var(--pd),
-            20px  -16px 0 var(--pd),
-            /* ── back legs (stride A) ── */
-             0px   -8px 0 var(--pt),
-             0px  -12px 0 var(--pd),
-             0px  -16px 0 var(--pd),
-             4px   -8px 0 var(--pt),
-             4px  -12px 0 var(--pd),
-             4px  -16px 0 var(--pd);
-          animation: legs-a 0.28s steps(1) infinite;
-        }
-
-        /* Frame B — legs together */
-        .dog-run::after {
-          content: '';
-          position: absolute;
-          width: 4px; height: 4px;
-          opacity: 0;
-          box-shadow:
-            /* ── tail (raised) ── */
-            -16px -20px 0 var(--pd),
-            -12px -24px 0 var(--pd),
-            -8px  -20px 0 var(--pd),
-            /* ── body (same) ── */
-            -4px  -20px 0 var(--pb),
-             0px  -20px 0 var(--pb),
-             4px  -20px 0 var(--pb),
-             8px  -20px 0 var(--pb),
-            12px  -20px 0 var(--pb),
-            16px  -20px 0 var(--pb),
-            20px  -20px 0 var(--pb),
-            -4px  -24px 0 var(--pb),
-             0px  -24px 0 var(--pb),
-             4px  -24px 0 var(--pb),
-             8px  -24px 0 var(--pb),
-            12px  -24px 0 var(--pb),
-            16px  -24px 0 var(--pb),
-            20px  -24px 0 var(--pb),
-            24px  -24px 0 var(--pb),
-            -4px  -28px 0 var(--pb),
-             0px  -28px 0 var(--pb),
-             4px  -28px 0 var(--pb),
-             8px  -28px 0 var(--pb),
-            12px  -28px 0 var(--pb),
-            16px  -28px 0 var(--pb),
-            20px  -28px 0 var(--pb),
-            24px  -28px 0 var(--pb),
-            /* ── head ── */
-            24px  -32px 0 var(--pd),
-            28px  -32px 0 var(--pd),
-            20px  -32px 0 var(--pt),
-            24px  -36px 0 var(--pd),
-            28px  -36px 0 var(--pd),
-            32px  -36px 0 var(--pd),
-            28px  -40px 0 var(--pd),
-            32px  -40px 0 var(--pd),
-            32px  -32px 0 var(--pt),
-            36px  -32px 0 var(--pt),
-            36px  -28px 0 var(--pt),
-            24px  -28px 0 var(--pd),
-            28px  -28px 0 var(--pd),
-            20px  -24px 0 var(--pt),
-            20px  -28px 0 var(--pt),
-            /* ── legs (stride B: bunched under body) ── */
-            12px  -12px 0 var(--pd),
-            12px   -8px 0 var(--pt),
-            16px  -12px 0 var(--pd),
-            16px   -8px 0 var(--pt),
-             4px  -12px 0 var(--pd),
-             4px   -8px 0 var(--pt),
-             8px  -12px 0 var(--pd),
-             8px   -8px 0 var(--pt);
-          animation: legs-b 0.28s steps(1) infinite;
-        }
-
-        @keyframes legs-a {
-          0%, 49%  { opacity: 1; }
-          50%, 100% { opacity: 0; }
-        }
-        @keyframes legs-b {
-          0%, 49%  { opacity: 0; }
-          50%, 100% { opacity: 1; }
-        }
-
-        /* horizontal run across the zone */
-        @keyframes dog-walk {
-          0%   { transform: translateX(-80px); }
-          100% { transform: translateX(80px); }
-        }
-        .dog-run {
-          animation: dog-walk 2.4s linear infinite;
-        }
-
-        /* pixelated ground dots */
-        .upload-zone::after {
-          content: '';
-          position: absolute;
-          bottom: 12px;
-          left: 0; right: 0;
-          height: 2px;
-          background: repeating-linear-gradient(
-            to right,
-            var(--border) 0px, var(--border) 4px,
-            transparent 4px, transparent 12px
-          );
-          opacity: 0.6;
-        }
-      `}</style>
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "80px" }}>
+      <canvas
+        ref={canvasRef}
+        width={520}
+        height={80}
+        style={{ imageRendering: "pixelated", maxWidth: "100%" }}
+      />
     </div>
   );
 }
