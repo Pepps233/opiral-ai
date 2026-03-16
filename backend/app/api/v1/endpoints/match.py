@@ -16,6 +16,8 @@ router = APIRouter()
 
 TOP_K = 10
 RETURN_TOP = 5
+MASS_APPLY_TOP_K = 60
+MASS_APPLY_RETURN = 50
 
 
 @router.post("/", response_model=MatchResponse)
@@ -44,7 +46,10 @@ async def match_labs(request: Request, body: MatchRequest):
     if body.desired_roles:
         parsed.desired_roles = body.desired_roles
 
-    candidates: List[LabMatch] = await query_similar_labs(parsed, top_k=TOP_K)
+    fetch_k = MASS_APPLY_TOP_K if body.mass_apply else TOP_K
+    return_n = MASS_APPLY_RETURN if body.mass_apply else RETURN_TOP
+
+    candidates: List[LabMatch] = await query_similar_labs(parsed, top_k=fetch_k)
 
     # Boost labs whose research_areas overlap with desired_roles
     if parsed.desired_roles:
@@ -59,7 +64,7 @@ async def match_labs(request: Request, body: MatchRequest):
 
         candidates.sort(key=boost_score, reverse=True)
 
-    top = candidates[:RETURN_TOP]
+    top = candidates[:return_n]
 
     # Log to match_logs
     supabase.table("match_logs").insert({

@@ -26,19 +26,22 @@ function MatchesContent() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [rateLimited, setRateLimited] = useState(false);
+  const [massApply, setMassApply] = useState(false);
   const [emailModal, setEmailModal] = useState<{ labId: string; professor: string } | null>(null);
 
-  const fetchMatches = useCallback(async () => {
+  const fetchMatches = useCallback(async (isMassApply: boolean) => {
     if (!sessionId) {
       router.push("/");
       return;
     }
     setLoading(true);
+    setError("");
+    setRateLimited(false);
     try {
       const res = await fetch(`${API_URL}/api/v1/match/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ session_id: sessionId }),
+        body: JSON.stringify({ session_id: sessionId, mass_apply: isMassApply }),
       });
       if (res.status === 429) {
         setRateLimited(true);
@@ -59,8 +62,14 @@ function MatchesContent() {
   }, [sessionId, router]);
 
   useEffect(() => {
-    fetchMatches();
-  }, [fetchMatches]);
+    fetchMatches(massApply);
+  }, [fetchMatches]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const handleModeSwitch = (newMassApply: boolean) => {
+    setMassApply(newMassApply);
+    setMatches([]);
+    fetchMatches(newMassApply);
+  };
 
   return (
     <main style={{ minHeight: "100vh", backgroundColor: "var(--background)" }}>
@@ -109,19 +118,54 @@ function MatchesContent() {
           }}>
             Your Results
           </p>
-          <h1 style={{
-            fontFamily: "var(--font-serif)",
-            fontSize: "clamp(1.8rem, 4vw, 2.4rem)",
-            fontWeight: 400,
-            letterSpacing: "-0.02em",
-            lineHeight: 1.2,
-            color: "var(--foreground)",
-          }}>
-            Research Lab Matches
-          </h1>
-          <p style={{ fontSize: "0.85rem", color: "var(--muted-foreground)", marginTop: "0.5rem" }}>
-            Hover each card to learn more. Click <em>Generate Email</em> to draft a personalized outreach.
-          </p>
+          <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem" }}>
+            <div>
+              <h1 style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(1.8rem, 4vw, 2.4rem)",
+                fontWeight: 400,
+                letterSpacing: "-0.02em",
+                lineHeight: 1.2,
+                color: "var(--foreground)",
+              }}>
+                Research Lab Matches
+              </h1>
+              <p style={{ fontSize: "0.85rem", color: "var(--muted-foreground)", marginTop: "0.5rem" }}>
+                Hover each card to learn more. Click <em>Generate Email</em> to draft a personalized outreach.
+              </p>
+            </div>
+            {/* Mode toggle */}
+            <div style={{
+              display: "flex",
+              border: "1px solid var(--border)",
+              borderRadius: "var(--radius-md)",
+              overflow: "hidden",
+              flexShrink: 0,
+            }}>
+              {[
+                { label: "Top 5", value: false },
+                { label: "Mass Apply (50)", value: true },
+              ].map(({ label, value }) => (
+                <button
+                  key={label}
+                  onClick={() => !loading && handleModeSwitch(value)}
+                  style={{
+                    padding: "0.4rem 0.9rem",
+                    fontSize: "0.75rem",
+                    fontWeight: 500,
+                    fontFamily: "var(--font-sans)",
+                    border: "none",
+                    cursor: loading ? "not-allowed" : "pointer",
+                    backgroundColor: massApply === value ? "var(--foreground)" : "var(--card)",
+                    color: massApply === value ? "#fff" : "var(--muted-foreground)",
+                    transition: "background-color 0.15s, color 0.15s",
+                  }}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
 
         {loading && (
@@ -175,6 +219,7 @@ function MatchesContent() {
               >
                 <LabCard
                   lab={lab}
+                  isBest={i === 0}
                   onGenerateEmail={() => setEmailModal({ labId: lab.lab_id, professor: lab.professor })}
                 />
               </div>
@@ -223,7 +268,7 @@ export default function MatchesPage() {
   );
 }
 
-function LabCard({ lab, onGenerateEmail }: { lab: LabMatch; onGenerateEmail: () => void }) {
+function LabCard({ lab, isBest, onGenerateEmail }: { lab: LabMatch; isBest: boolean; onGenerateEmail: () => void }) {
   const scorePercent = Math.round(lab.similarity_score * 100);
 
   return (
@@ -232,7 +277,7 @@ function LabCard({ lab, onGenerateEmail }: { lab: LabMatch; onGenerateEmail: () 
         {/* Front */}
         <div className="flip-card-front" style={{
           backgroundColor: "var(--card)",
-          border: "1px solid var(--border)",
+          border: isBest ? "1.5px solid var(--gold)" : "1px solid var(--border)",
           padding: "1.75rem 2rem",
           display: "flex",
           flexDirection: "column",
@@ -241,15 +286,30 @@ function LabCard({ lab, onGenerateEmail }: { lab: LabMatch; onGenerateEmail: () 
           <div>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "1rem" }}>
               <div>
-                <p style={{
-                  fontFamily: "var(--font-serif)",
-                  fontSize: "1.1rem",
-                  fontWeight: 400,
-                  color: "var(--foreground)",
-                  marginBottom: "0.2rem",
-                }}>
-                  {lab.professor}
-                </p>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.2rem" }}>
+                  <p style={{
+                    fontFamily: "var(--font-serif)",
+                    fontSize: "1.1rem",
+                    fontWeight: 400,
+                    color: "var(--foreground)",
+                  }}>
+                    {lab.professor}
+                  </p>
+                  {isBest && (
+                    <span style={{
+                      fontSize: "0.65rem",
+                      fontWeight: 600,
+                      color: "var(--gold)",
+                      letterSpacing: "0.06em",
+                      textTransform: "uppercase",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.25rem",
+                    }}>
+                      ★ Best Match
+                    </span>
+                  )}
+                </div>
                 <p style={{ fontSize: "0.78rem", color: "var(--muted-foreground)" }}>
                   {lab.department}
                 </p>

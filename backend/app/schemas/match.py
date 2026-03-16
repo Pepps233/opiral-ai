@@ -5,6 +5,7 @@ from typing import List, Optional
 class MatchRequest(BaseModel):
     session_id: str
     desired_roles: Optional[List[str]] = None
+    mass_apply: bool = False
 
 
 class LabMatch(BaseModel):
