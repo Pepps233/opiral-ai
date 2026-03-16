@@ -89,7 +89,7 @@ function MatchesContent() {
             color: "var(--foreground)",
           }}
         >
-          Semora
+          Opiral
         </button>
         <span style={{ fontSize: "0.78rem", color: "var(--muted-foreground)" }}>
           {matches.length > 0 ? `${matches.length} matches found` : ""}

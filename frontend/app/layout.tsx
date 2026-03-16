@@ -20,7 +20,7 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Semora — Research Lab Matching for Purdue Students",
+  title: "Opiral | Research Matching for Purdue Students",
   description: "Upload your resume and get matched to Purdue research labs in seconds.",
 };
 

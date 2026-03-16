@@ -120,7 +120,7 @@ export default function Home() {
           letterSpacing: "-0.01em",
           color: "var(--foreground)",
         }}>
-          Semora
+          Opiral
         </span>
         <span style={{
           fontSize: "0.75rem",
@@ -164,7 +164,7 @@ export default function Home() {
             color: "var(--foreground)",
             marginBottom: "1.25rem",
           }}>
-            Find your research lab<br />
+            Find Purdue Research<br />
             <em style={{ fontStyle: "italic", color: "var(--muted-foreground)" }}>in seconds</em>
           </h1>
           <p className="fade-up fade-up-delay-3" style={{
@@ -175,7 +175,7 @@ export default function Home() {
             margin: "0 auto",
           }}>
             Upload your resume. We parse it, match it against Purdue&apos;s research labs,
-            and generate a personalized outreach email — no account required.
+            and generate a personalized outreach email.
           </p>
         </div>
 
