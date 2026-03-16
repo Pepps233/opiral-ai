@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useState, useCallback, Suspense } from "react";
+import { useState, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
+import { useQuery } from "@tanstack/react-query";
 import EmailModal from "@/components/EmailModal";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -17,59 +18,51 @@ interface LabMatch {
   professor_about?: string;
 }
 
+interface MatchResponse {
+  session_id: string;
+  matches: LabMatch[];
+}
+
+async function fetchMatches(sessionId: string, massApply: boolean): Promise<MatchResponse> {
+  const res = await fetch(`${API_URL}/api/v1/match/`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ session_id: sessionId, mass_apply: massApply }),
+  });
+  if (res.status === 429) {
+    throw new Error("__rate_limited__");
+  }
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.detail || "Failed to fetch matches.");
+  }
+  return res.json();
+}
+
 function MatchesContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const sessionId = searchParams.get("session") || "";
 
-  const [matches, setMatches] = useState<LabMatch[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
-  const [rateLimited, setRateLimited] = useState(false);
   const [massApply, setMassApply] = useState(false);
   const [emailModal, setEmailModal] = useState<{ labId: string; professor: string } | null>(null);
 
-  const fetchMatches = useCallback(async (isMassApply: boolean) => {
-    if (!sessionId) {
-      router.push("/");
-      return;
-    }
-    setLoading(true);
-    setError("");
-    setRateLimited(false);
-    try {
-      const res = await fetch(`${API_URL}/api/v1/match/`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ session_id: sessionId, mass_apply: isMassApply }),
-      });
-      if (res.status === 429) {
-        setRateLimited(true);
-        setLoading(false);
-        return;
-      }
-      if (!res.ok) {
-        const err = await res.json().catch(() => ({}));
-        throw new Error(err.detail || "Failed to fetch matches.");
-      }
-      const data = await res.json();
-      setMatches(data.matches || []);
-    } catch (e: unknown) {
-      setError(e instanceof Error ? e.message : "Something went wrong.");
-    } finally {
-      setLoading(false);
-    }
-  }, [sessionId, router]);
+  if (!sessionId) {
+    router.push("/");
+    return null;
+  }
 
-  useEffect(() => {
-    fetchMatches(massApply);
-  }, [fetchMatches]); // eslint-disable-line react-hooks/exhaustive-deps
+  // Each mode gets its own cache entry — switching tabs uses cached data for 5 min
+  const { data, isLoading, error } = useQuery<MatchResponse, Error>({
+    queryKey: ["matches", sessionId, massApply],
+    queryFn: () => fetchMatches(sessionId, massApply),
+    staleTime: 5 * 60 * 1000,
+    retry: false,
+  });
 
-  const handleModeSwitch = (newMassApply: boolean) => {
-    setMassApply(newMassApply);
-    setMatches([]);
-    fetchMatches(newMassApply);
-  };
+  const rateLimited = error?.message === "__rate_limited__";
+  const fetchError = error && !rateLimited ? error.message : "";
+  const matches = data?.matches ?? [];
 
   return (
     <main style={{ minHeight: "100vh", backgroundColor: "var(--background)" }}>
@@ -107,8 +100,8 @@ function MatchesContent() {
 
       <div style={{ maxWidth: "820px", margin: "0 auto", padding: "3rem 1.5rem" }}>
         {/* Header */}
-        <div className="fade-up" style={{ marginBottom: "2.5rem" }}>
-          <p style={{
+        <div style={{ marginBottom: "2.5rem" }}>
+          <p className="fade-up" style={{
             fontSize: "0.7rem",
             letterSpacing: "0.12em",
             textTransform: "uppercase",
@@ -119,7 +112,7 @@ function MatchesContent() {
             Your Results
           </p>
           <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem" }}>
-            <div>
+            <div className="fade-up">
               <h1 style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(1.8rem, 4vw, 2.4rem)",
@@ -134,7 +127,7 @@ function MatchesContent() {
                 Hover each card to learn more. Click <em>Generate Email</em> to draft a personalized outreach.
               </p>
             </div>
-            {/* Mode toggle */}
+            {/* Mode toggle — always visible, no fade-up */}
             <div style={{
               display: "flex",
               border: "1px solid var(--border)",
@@ -148,14 +141,14 @@ function MatchesContent() {
               ].map(({ label, value }) => (
                 <button
                   key={label}
-                  onClick={() => !loading && handleModeSwitch(value)}
+                  onClick={() => setMassApply(value)}
                   style={{
                     padding: "0.4rem 0.9rem",
                     fontSize: "0.75rem",
                     fontWeight: 500,
                     fontFamily: "var(--font-sans)",
                     border: "none",
-                    cursor: loading ? "not-allowed" : "pointer",
+                    cursor: "pointer",
                     backgroundColor: massApply === value ? "var(--foreground)" : "var(--card)",
                     color: massApply === value ? "#fff" : "var(--muted-foreground)",
                     transition: "background-color 0.15s, color 0.15s",
@@ -168,7 +161,7 @@ function MatchesContent() {
           </div>
         </div>
 
-        {loading && (
+        {isLoading && (
           <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
             {[1, 2, 3].map((i) => (
               <div key={i} style={{
@@ -181,7 +174,7 @@ function MatchesContent() {
           </div>
         )}
 
-        {error && (
+        {fetchError && (
           <div style={{
             border: "1px solid #fca5a5",
             borderRadius: "var(--radius)",
@@ -190,7 +183,7 @@ function MatchesContent() {
             color: "#dc2626",
             fontSize: "0.9rem",
           }}>
-            {error}
+            {fetchError}
           </div>
         )}
 
@@ -202,20 +195,20 @@ function MatchesContent() {
             padding: "2rem",
             textAlign: "center",
           }}>
-            <p style={{ fontWeight: 500, marginBottom: "0.5rem" }}>Daily limit reached</p>
+            <p style={{ fontWeight: 500, marginBottom: "0.5rem" }}>Session limit reached</p>
             <p style={{ fontSize: "0.85rem", color: "var(--muted-foreground)" }}>
-              You&apos;ve used all 5 match requests for today. Come back tomorrow.
+              You&apos;ve used all match requests for this session. Upload a new resume to continue.
             </p>
           </div>
         )}
 
-        {!loading && !error && !rateLimited && matches.length > 0 && (
+        {!isLoading && !fetchError && !rateLimited && matches.length > 0 && (
           <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
             {matches.map((lab, i) => (
               <div
                 key={lab.lab_id}
                 className="fade-up"
-                style={{ animationDelay: `${i * 0.08}s`, opacity: 0 }}
+                style={{ animationDelay: `${i * 0.05}s`, opacity: 0 }}
               >
                 <LabCard
                   lab={lab}
@@ -227,7 +220,7 @@ function MatchesContent() {
           </div>
         )}
 
-        {!loading && !error && !rateLimited && matches.length === 0 && (
+        {!isLoading && !fetchError && !rateLimited && matches.length === 0 && (
           <div style={{
             border: "1px solid var(--border)",
             borderRadius: "var(--radius)",
