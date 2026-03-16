@@ -3,7 +3,11 @@
     "lab_id": "purdue-cs-ninguyen",
     "professor": "Prof. Nin Nguyen",
     "department": "Computer Science",
-    "research_areas": ["machine learning", "computer vision", "deep learning"],
+    "research_areas": [
+      "machine learning",
+      "computer vision",
+      "deep learning"
+    ],
     "contact_email": "nguyen@purdue.edu",
     "description": "Research in deep learning architectures for visual understanding and scene recognition.",
     "professor_about": "Prof. Nin Nguyen joined Purdue CS in 2018 after completing his PhD at Carnegie Mellon. His lab focuses on building scalable vision systems using transformer-based architectures, with applications in autonomous driving and medical imaging."
@@ -12,7 +16,12 @@
     "lab_id": "purdue-ece-delp",
     "professor": "Prof. Edward Delp",
     "department": "Electrical & Computer Engineering",
-    "research_areas": ["image processing", "signal processing", "computer vision", "security"],
+    "research_areas": [
+      "image processing",
+      "signal processing",
+      "computer vision",
+      "security"
+    ],
     "contact_email": "ace@purdue.edu",
     "description": "Video and image analysis, multimedia security, and medical imaging.",
     "professor_about": "Prof. Edward Delp is the Charles William Harrison Distinguished Professor of ECE. He has over 40 years of research experience in image and video processing, and is a Fellow of the IEEE and SPIE. His lab, the Video and Image Processing Lab (VIPER), collaborates with hospitals and defense agencies."
@@ -21,7 +30,11 @@
     "lab_id": "purdue-cs-qi",
     "professor": "Prof. Qi (Rose) Yu",
     "department": "Computer Science",
-    "research_areas": ["spatiotemporal forecasting", "graph neural networks", "time series"],
+    "research_areas": [
+      "spatiotemporal forecasting",
+      "graph neural networks",
+      "time series"
+    ],
     "contact_email": "qiyu@purdue.edu",
     "description": "Machine learning for spatiotemporal data including traffic and climate forecasting.",
     "professor_about": "Prof. Qi Yu is an associate professor in Purdue CS with a background in probabilistic modeling and structured prediction. Her lab develops data-driven methods for forecasting dynamic systems, with real-world applications in transportation and climate science."
@@ -30,7 +43,12 @@
     "lab_id": "purdue-cs-bhatt",
     "professor": "Prof. Saurabh Bagchi",
     "department": "Computer Science",
-    "research_areas": ["distributed systems", "fault tolerance", "cloud computing", "reliability"],
+    "research_areas": [
+      "distributed systems",
+      "fault tolerance",
+      "cloud computing",
+      "reliability"
+    ],
     "contact_email": "sbagchi@purdue.edu",
     "description": "Dependability and security of large-scale distributed and embedded systems.",
     "professor_about": "Prof. Saurabh Bagchi is a professor of ECE and CS at Purdue, and directs the Dependable Computing Systems Lab (DCSL). His research spans failure diagnosis, checkpointing, and resilience in cloud and edge systems. He is a Fellow of the IEEE."
@@ -39,7 +57,11 @@
     "lab_id": "purdue-cs-chaudhuri",
     "professor": "Prof. Somali Chaudhuri",
     "department": "Computer Science",
-    "research_areas": ["programming languages", "formal verification", "compilers"],
+    "research_areas": [
+      "programming languages",
+      "formal verification",
+      "compilers"
+    ],
     "contact_email": "schaudhu@purdue.edu",
     "description": "Formal methods, type systems, and program verification for safe software.",
     "professor_about": "Prof. Somali Chaudhuri works at the intersection of programming language theory and software engineering. Her lab develops type-theoretic tools and formal verification frameworks for proving correctness properties of real-world programs."
@@ -48,7 +70,12 @@
     "lab_id": "purdue-cs-kan",
     "professor": "Prof. Jianguo Wang",
     "department": "Computer Science",
-    "research_areas": ["database systems", "vector databases", "data management", "storage"],
+    "research_areas": [
+      "database systems",
+      "vector databases",
+      "data management",
+      "storage"
+    ],
     "contact_email": "csjgwang@purdue.edu",
     "description": "High-performance database engines and modern data management for AI workloads.",
     "professor_about": "Prof. Jianguo Wang is an associate professor in Purdue CS whose research centers on building next-generation database systems. His recent work focuses on vector database engines and storage architectures tailored for large-scale AI and machine learning applications."
@@ -57,7 +84,12 @@
     "lab_id": "purdue-cs-niyogi",
     "professor": "Prof. Aniket Kate",
     "department": "Computer Science",
-    "research_areas": ["cryptography", "blockchain", "privacy", "security protocols"],
+    "research_areas": [
+      "cryptography",
+      "blockchain",
+      "privacy",
+      "security protocols"
+    ],
     "contact_email": "aniket@purdue.edu",
     "description": "Applied cryptography, decentralized protocols, and privacy-preserving computation.",
     "professor_about": "Prof. Aniket Kate is an associate professor in Purdue CS and an expert in applied cryptography and decentralized systems. His lab designs and analyzes secure multi-party computation protocols, anonymous communication systems, and blockchain consensus mechanisms."
@@ -66,7 +98,12 @@
     "lab_id": "purdue-ece-han",
     "professor": "Prof. Yung-Hsiang Lu",
     "department": "Electrical & Computer Engineering",
-    "research_areas": ["edge computing", "embedded systems", "low-power AI", "computer vision"],
+    "research_areas": [
+      "edge computing",
+      "embedded systems",
+      "low-power AI",
+      "computer vision"
+    ],
     "contact_email": "yunglu@purdue.edu",
     "description": "Energy-efficient computing systems and edge AI for real-time visual applications.",
     "professor_about": "Prof. Yung-Hsiang Lu is a professor of ECE at Purdue and co-founder of CAM2 (Continuous Analysis of Many CAMeras). His lab works on reducing energy consumption of AI inference on constrained devices, with a focus on distributed camera networks and real-time object detection."
@@ -75,7 +112,12 @@
     "lab_id": "purdue-ece-koltun",
     "professor": "Prof. David Inouye",
     "department": "Electrical & Computer Engineering",
-    "research_areas": ["probabilistic models", "generative models", "distribution shift", "fairness in ML"],
+    "research_areas": [
+      "probabilistic models",
+      "generative models",
+      "distribution shift",
+      "fairness in ML"
+    ],
     "contact_email": "dinouye@purdue.edu",
     "description": "Trustworthy machine learning including fairness, robustness, and uncertainty quantification.",
     "professor_about": "Prof. David Inouye is an assistant professor of ECE at Purdue. His research develops principled probabilistic methods for building machine learning models that are fair, robust to distribution shift, and well-calibrated in their uncertainty estimates."
@@ -84,7 +126,11 @@
     "lab_id": "purdue-cs-xiao",
     "professor": "Prof. Xiaojin (Jerry) Zhu",
     "department": "Computer Science",
-    "research_areas": ["machine teaching", "semi-supervised learning", "adversarial ML"],
+    "research_areas": [
+      "machine teaching",
+      "semi-supervised learning",
+      "adversarial ML"
+    ],
     "contact_email": "jerryzhu@purdue.edu",
     "description": "Machine teaching theory and adversarial examples in learning systems.",
     "professor_about": "Prof. Jerry Zhu is a professor in Purdue CS with broad interests in statistical machine learning. His lab pioneered the area of machine teaching, studying how to optimally construct training datasets to steer model learning, and explores adversarial vulnerabilities in classifiers."
@@ -93,7 +139,12 @@
     "lab_id": "purdue-cs-luo",
     "professor": "Prof. Dan Goldwasser",
     "department": "Computer Science",
-    "research_areas": ["natural language processing", "political NLP", "social media analysis", "commonsense reasoning"],
+    "research_areas": [
+      "natural language processing",
+      "political NLP",
+      "social media analysis",
+      "commonsense reasoning"
+    ],
     "contact_email": "dgoldwas@purdue.edu",
     "description": "NLP for understanding political discourse, narrative framing, and commonsense knowledge.",
     "professor_about": "Prof. Dan Goldwasser is an associate professor in Purdue CS whose lab applies NLP to politically and socially relevant language. His work covers stance detection, ideology modeling in social media, and grounding language in world knowledge for commonsense reasoning."
@@ -102,7 +153,12 @@
     "lab_id": "purdue-cs-zhang",
     "professor": "Prof. Tianyi Zhang",
     "department": "Computer Science",
-    "research_areas": ["software engineering", "large language models", "code generation", "program synthesis"],
+    "research_areas": [
+      "software engineering",
+      "large language models",
+      "code generation",
+      "program synthesis"
+    ],
     "contact_email": "tianyi@purdue.edu",
     "description": "AI-assisted software development, LLM evaluation, and automated code repair.",
     "professor_about": "Prof. Tianyi Zhang is an assistant professor in Purdue CS working at the intersection of software engineering and AI. His lab studies how LLMs can be used reliably for code generation, automated bug fixing, and developer tooling, with a focus on evaluation methodology."
@@ -111,7 +167,11 @@
     "lab_id": "purdue-cs-zhou",
     "professor": "Prof. Meng Ye",
     "department": "Computer Science",
-    "research_areas": ["reinforcement learning", "multi-agent systems", "game theory"],
+    "research_areas": [
+      "reinforcement learning",
+      "multi-agent systems",
+      "game theory"
+    ],
     "contact_email": "mengye@purdue.edu",
     "description": "Multi-agent reinforcement learning, strategic decision-making, and emergent behavior.",
     "professor_about": "Prof. Meng Ye is an assistant professor in Purdue CS interested in reinforcement learning and multi-agent systems. His lab studies how agents learn to cooperate or compete in complex environments, drawing on game-theoretic frameworks to understand emergent strategies."
@@ -120,7 +180,12 @@
     "lab_id": "purdue-ece-bermel",
     "professor": "Prof. Peter Bermel",
     "department": "Electrical & Computer Engineering",
-    "research_areas": ["photonics", "nanophotonics", "solar energy", "computational electromagnetics"],
+    "research_areas": [
+      "photonics",
+      "nanophotonics",
+      "solar energy",
+      "computational electromagnetics"
+    ],
     "contact_email": "pbermel@purdue.edu",
     "description": "Photonic device design for energy harvesting, optical computing, and sensing.",
     "professor_about": "Prof. Peter Bermel is an associate professor of ECE at Purdue. His lab uses computational methods to design novel photonic structures for applications in solar cells, infrared emitters, and optical neural networks. He directs the Photovoltaics and Computational Photonics group."
@@ -129,7 +194,12 @@
     "lab_id": "purdue-cs-ben",
     "professor": "Prof. Bharat Bhargava",
     "department": "Computer Science",
-    "research_areas": ["cybersecurity", "network security", "data privacy", "autonomous systems security"],
+    "research_areas": [
+      "cybersecurity",
+      "network security",
+      "data privacy",
+      "autonomous systems security"
+    ],
     "contact_email": "bbargava@purdue.edu",
     "description": "Security of networked and autonomous systems, privacy-preserving data sharing.",
     "professor_about": "Prof. Bharat Bhargava is a distinguished professor in Purdue CS and a Fellow of the IEEE. His CERIAS-affiliated lab has decades of experience in network intrusion detection, secure data management, and adversarial robustness in autonomous vehicle systems."
@@ -138,7 +208,11 @@
     "lab_id": "purdue-cs-tapia",
     "professor": "Prof. Aryan Deshwal",
     "department": "Computer Science",
-    "research_areas": ["Bayesian optimization", "experimental design", "scientific ML"],
+    "research_areas": [
+      "Bayesian optimization",
+      "experimental design",
+      "scientific ML"
+    ],
     "contact_email": "adeshwal@purdue.edu",
     "description": "Sample-efficient optimization methods for expensive scientific experiments.",
     "professor_about": "Prof. Aryan Deshwal is an assistant professor in Purdue CS whose lab develops Bayesian optimization algorithms for black-box functions. His work is applied to drug discovery, materials design, and hyperparameter tuning, with an emphasis on high-dimensional and combinatorial search spaces."
@@ -147,7 +221,12 @@
     "lab_id": "purdue-ece-brinton",
     "professor": "Prof. Christopher Brinton",
     "department": "Electrical & Computer Engineering",
-    "research_areas": ["federated learning", "wireless networks", "edge ML", "network optimization"],
+    "research_areas": [
+      "federated learning",
+      "wireless networks",
+      "edge ML",
+      "network optimization"
+    ],
     "contact_email": "cjbrinton@purdue.edu",
     "description": "Federated and distributed machine learning over wireless and heterogeneous networks.",
     "professor_about": "Prof. Christopher Brinton is an associate professor of ECE at Purdue. His lab addresses the challenge of training ML models collaboratively across resource-constrained wireless devices, with research on communication-efficient federated learning and network-aware model compression."
@@ -156,7 +235,12 @@
     "lab_id": "purdue-cs-walker",
     "professor": "Prof. Suresh Jagannathan",
     "department": "Computer Science",
-    "research_areas": ["programming languages", "concurrent programming", "type theory", "runtime verification"],
+    "research_areas": [
+      "programming languages",
+      "concurrent programming",
+      "type theory",
+      "runtime verification"
+    ],
     "contact_email": "suresh@cs.purdue.edu",
     "description": "Language design and runtime tools for safe concurrent and distributed programs.",
     "professor_about": "Prof. Suresh Jagannathan is a professor in Purdue CS with expertise in programming language semantics and concurrency. His lab designs language abstractions and static analysis tools that help developers reason about race conditions, memory consistency, and correctness of distributed protocols."
@@ -165,7 +249,12 @@
     "lab_id": "purdue-ie-karimi",
     "professor": "Prof. Hossein Karimi",
     "department": "Industrial Engineering",
-    "research_areas": ["operations research", "optimization", "supply chain", "healthcare systems"],
+    "research_areas": [
+      "operations research",
+      "optimization",
+      "supply chain",
+      "healthcare systems"
+    ],
     "contact_email": "hkarimi@purdue.edu",
     "description": "Optimization models for healthcare resource allocation and supply chain resilience.",
     "professor_about": "Prof. Hossein Karimi is an associate professor in Purdue Industrial Engineering. His research applies stochastic optimization and integer programming to real-world operations problems in hospital staffing, medical supply chains, and disaster logistics."
@@ -174,7 +263,12 @@
     "lab_id": "purdue-cs-dogan",
     "professor": "Prof. Berkay Celik",
     "department": "Computer Science",
-    "research_areas": ["IoT security", "program analysis", "smart home security", "cyber-physical systems"],
+    "research_areas": [
+      "IoT security",
+      "program analysis",
+      "smart home security",
+      "cyber-physical systems"
+    ],
     "contact_email": "tcelik@purdue.edu",
     "description": "Security analysis of IoT apps and smart home devices using program analysis.",
     "professor_about": "Prof. Berkay Celik is an assistant professor in Purdue CS. His lab builds static and dynamic analysis tools to discover security and privacy vulnerabilities in IoT platforms, smart home automation rules, and cyber-physical system controllers."
@@ -183,7 +277,11 @@
     "lab_id": "purdue-cs-ribeiro",
     "professor": "Prof. Pedro Tabacof",
     "department": "Computer Science",
-    "research_areas": ["generative models", "variational inference", "representation learning"],
+    "research_areas": [
+      "generative models",
+      "variational inference",
+      "representation learning"
+    ],
     "contact_email": "ptabacof@purdue.edu",
     "description": "Deep generative models for structured data, images, and scientific simulation.",
     "professor_about": "Prof. Pedro Tabacof is an assistant professor in Purdue CS focused on probabilistic deep learning. His lab designs variational autoencoders, normalizing flows, and diffusion models for applications in molecule generation, image synthesis, and uncertainty-aware prediction."
@@ -192,7 +290,12 @@
     "lab_id": "purdue-ece-xu",
     "professor": "Prof. Xiaojun Lin",
     "department": "Electrical & Computer Engineering",
-    "research_areas": ["network resource allocation", "online algorithms", "queueing theory", "wireless"],
+    "research_areas": [
+      "network resource allocation",
+      "online algorithms",
+      "queueing theory",
+      "wireless"
+    ],
     "contact_email": "linx@purdue.edu",
     "description": "Theoretical foundations of network scheduling, resource sharing, and online decision-making.",
     "professor_about": "Prof. Xiaojun Lin is a professor of ECE at Purdue and an IEEE Fellow. His lab works on network control theory, developing mathematical frameworks for optimal scheduling and resource allocation under uncertainty in wireless and data-center networks."
@@ -201,7 +304,12 @@
     "lab_id": "purdue-cs-jagadish",
     "professor": "Prof. Walid G. Aref",
     "department": "Computer Science",
-    "research_areas": ["spatial databases", "indexing", "data streams", "sensor data"],
+    "research_areas": [
+      "spatial databases",
+      "indexing",
+      "data streams",
+      "sensor data"
+    ],
     "contact_email": "aref@purdue.edu",
     "description": "Indexing and querying spatial, spatio-temporal, and streaming data at scale.",
     "professor_about": "Prof. Walid Aref is a professor in Purdue CS and an ACM Fellow. His PLACE (Purdue Large-Scale Computing Environment) lab develops spatial database engines, in-situ processing frameworks, and streaming query systems for large-scale sensor and location data."
@@ -210,7 +318,12 @@
     "lab_id": "purdue-cs-lin",
     "professor": "Prof. Ming Yin",
     "department": "Computer Science",
-    "research_areas": ["human-computer interaction", "crowdsourcing", "human-AI collaboration", "behavioral economics"],
+    "research_areas": [
+      "human-computer interaction",
+      "crowdsourcing",
+      "human-AI collaboration",
+      "behavioral economics"
+    ],
     "contact_email": "mingyin@purdue.edu",
     "description": "Human factors in AI-assisted decision making and crowd-based data collection.",
     "professor_about": "Prof. Ming Yin is an associate professor in Purdue CS. Her lab studies how people interact with AI systems, focusing on algorithmic decision support, biases in human-AI teams, and the design of fair crowdsourcing workflows. She uses behavioral experiments to inform HCI and AI system design."
@@ -219,7 +332,12 @@
     "lab_id": "purdue-cs-nikolopoulos",
     "professor": "Prof. Liang Zheng",
     "department": "Computer Science",
-    "research_areas": ["person re-identification", "object detection", "video understanding", "vision-language models"],
+    "research_areas": [
+      "person re-identification",
+      "object detection",
+      "video understanding",
+      "vision-language models"
+    ],
     "contact_email": "lzheng@purdue.edu",
     "description": "Large-scale visual recognition and vision-language understanding for surveillance and retrieval.",
     "professor_about": "Prof. Liang Zheng is an associate professor in Purdue CS. His lab advances visual recognition systems for person re-identification across cameras, video-based action recognition, and multi-modal vision-language models for image-text retrieval and visual question answering."
@@ -228,7 +346,12 @@
     "lab_id": "purdue-cs-naren",
     "professor": "Prof. Petros Drineas",
     "department": "Computer Science",
-    "research_areas": ["randomized algorithms", "numerical linear algebra", "sketching", "genomics"],
+    "research_areas": [
+      "randomized algorithms",
+      "numerical linear algebra",
+      "sketching",
+      "genomics"
+    ],
     "contact_email": "pdrineas@purdue.edu",
     "description": "Randomized matrix methods for large-scale scientific and genomic data analysis.",
     "professor_about": "Prof. Petros Drineas is a professor in Purdue CS. His research develops randomized algorithms and matrix sketching techniques for scalable linear algebra. Applications include genome-wide association studies, recommendation systems, and fast approximate computation in data science pipelines."
@@ -237,7 +360,12 @@
     "lab_id": "purdue-ece-wei",
     "professor": "Prof. Shreyas Sen",
     "department": "Electrical & Computer Engineering",
-    "research_areas": ["hardware security", "side-channel attacks", "VLSI", "secure chip design"],
+    "research_areas": [
+      "hardware security",
+      "side-channel attacks",
+      "VLSI",
+      "secure chip design"
+    ],
     "contact_email": "shreyas@purdue.edu",
     "description": "Secure integrated circuit design and countermeasures against side-channel attacks.",
     "professor_about": "Prof. Shreyas Sen is an associate professor of ECE at Purdue. His lab designs hardware security primitives and physical unclonable functions, and studies vulnerabilities in chip implementations of cryptographic algorithms through side-channel and fault injection analysis."
@@ -246,7 +374,12 @@
     "lab_id": "purdue-cs-shang",
     "professor": "Prof. Yexiang Xue",
     "department": "Computer Science",
-    "research_areas": ["combinatorial optimization", "constraint reasoning", "AI for science", "computational sustainability"],
+    "research_areas": [
+      "combinatorial optimization",
+      "constraint reasoning",
+      "AI for science",
+      "computational sustainability"
+    ],
     "contact_email": "yexiang@purdue.edu",
     "description": "AI-driven combinatorial methods for sustainability and scientific discovery.",
     "professor_about": "Prof. Yexiang Xue is an assistant professor in Purdue CS. His lab integrates machine learning with combinatorial optimization and constraint programming to address problems in wildlife conservation, energy systems, and molecular design. He is a recipient of the NSF CAREER award."
@@ -255,7 +388,12 @@
     "lab_id": "purdue-cs-park",
     "professor": "Prof. Dongyan Xu",
     "department": "Computer Science",
-    "research_areas": ["systems security", "cyber forensics", "provenance tracking", "intrusion detection"],
+    "research_areas": [
+      "systems security",
+      "cyber forensics",
+      "provenance tracking",
+      "intrusion detection"
+    ],
     "contact_email": "dxu@purdue.edu",
     "description": "OS-level security, attack provenance, and forensic analysis of cyber intrusions.",
     "professor_about": "Prof. Dongyan Xu is a professor in Purdue CS and co-director of CERIAS. His lab develops kernel-level tracing and provenance graph analysis systems to reconstruct attack kill chains. His tools have been adopted in real-world incident response and are integrated into major SOC platforms."
@@ -264,7 +402,12 @@
     "lab_id": "purdue-cs-ramani",
     "professor": "Prof. Karthik Ramani",
     "department": "Mechanical Engineering / Computer Science",
-    "research_areas": ["3D shape understanding", "human-robot interaction", "haptics", "design computing"],
+    "research_areas": [
+      "3D shape understanding",
+      "human-robot interaction",
+      "haptics",
+      "design computing"
+    ],
     "contact_email": "ramani@purdue.edu",
     "description": "Shape-based retrieval, tangible interfaces, and AI for engineering design.",
     "professor_about": "Prof. Karthik Ramani holds a joint appointment in ME and CS at Purdue. His C-Design Lab pioneers methods for 3D shape retrieval, sketch-based modeling, and tangible user interfaces. His recent work uses deep learning for design generation and human-robot physical interaction."
@@ -273,7 +416,12 @@
     "lab_id": "purdue-cs-khan",
     "professor": "Prof. Sonia Fahmy",
     "department": "Computer Science",
-    "research_areas": ["network measurement", "internet topology", "software-defined networking", "network emulation"],
+    "research_areas": [
+      "network measurement",
+      "internet topology",
+      "software-defined networking",
+      "network emulation"
+    ],
     "contact_email": "fahmy@purdue.edu",
     "description": "Internet measurement, topology inference, and testbed-based network research.",
     "professor_about": "Prof. Sonia Fahmy is a professor of CS at Purdue and an IEEE Fellow. Her lab builds network measurement infrastructure and topology-aware protocols. She co-created the DETER cybersecurity testbed and conducts experimental networking research on SDN, NFV, and cloud interconnects."
@@ -282,7 +430,12 @@
     "lab_id": "purdue-cs-hambrusch",
     "professor": "Prof. Ananth Grama",
     "department": "Computer Science",
-    "research_areas": ["parallel computing", "HPC", "bioinformatics", "computational biology"],
+    "research_areas": [
+      "parallel computing",
+      "HPC",
+      "bioinformatics",
+      "computational biology"
+    ],
     "contact_email": "ayg@purdue.edu",
     "description": "Scalable parallel algorithms for bioinformatics and high-performance simulation.",
     "professor_about": "Prof. Ananth Grama is a professor in Purdue CS. His lab develops parallel and distributed algorithms for genome assembly, protein structure analysis, and large-scale scientific simulations. He has co-authored a widely used textbook on parallel computing and is an ACM Distinguished Scientist."
@@ -291,7 +444,12 @@
     "lab_id": "purdue-ece-kim",
     "professor": "Prof. Eunyoung Kim",
     "department": "Electrical & Computer Engineering",
-    "research_areas": ["power electronics", "energy storage", "EV charging", "power systems"],
+    "research_areas": [
+      "power electronics",
+      "energy storage",
+      "EV charging",
+      "power systems"
+    ],
     "contact_email": "kim1234@purdue.edu",
     "description": "High-efficiency power conversion and EV charging infrastructure research.",
     "professor_about": "Prof. Eunyoung Kim is an assistant professor in Purdue ECE. Her lab works on wide-bandgap semiconductor devices for next-generation power converters, focusing on fast EV charging systems, grid-connected inverters, and thermal management of high-power electronics."
@@ -300,7 +458,12 @@
     "lab_id": "purdue-cs-jiang",
     "professor": "Prof. Ruqi Zhang",
     "department": "Computer Science",
-    "research_areas": ["Bayesian deep learning", "MCMC sampling", "uncertainty quantification", "trustworthy AI"],
+    "research_areas": [
+      "Bayesian deep learning",
+      "MCMC sampling",
+      "uncertainty quantification",
+      "trustworthy AI"
+    ],
     "contact_email": "ruqiz@purdue.edu",
     "description": "Scalable sampling methods and calibrated uncertainty for deep neural networks.",
     "professor_about": "Prof. Ruqi Zhang is an assistant professor in Purdue CS. Her lab develops efficient Markov chain Monte Carlo algorithms and variational inference methods to quantify uncertainty in large neural networks. Applications include medical decision support, scientific discovery, and robust AI deployment."
@@ -309,9 +472,1500 @@
     "lab_id": "purdue-cs-goldsmith",
     "professor": "Prof. Elisa Bertino",
     "department": "Computer Science",
-    "research_areas": ["data security", "identity management", "access control", "privacy"],
+    "research_areas": [
+      "data security",
+      "identity management",
+      "access control",
+      "privacy"
+    ],
     "contact_email": "bertino@purdue.edu",
     "description": "Policy-based access control, digital identity, and privacy-preserving data systems.",
     "professor_about": "Prof. Elisa Bertino is a distinguished professor in Purdue CS, co-director of CERIAS, and an IEEE and ACM Fellow. She has decades of research in database security, attribute-based access control, federated identity management, and regulatory compliance for data privacy. She advises multiple government agencies on cybersecurity policy."
+  },
+  {
+    "lab_id": "purdue-cs-aliaga",
+    "professor": "Prof. Daniel G. Aliaga",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Urban Visual Computing",
+      "Computer Graphics",
+      "Computer Vision",
+      "Inverse Procedural Modeling",
+      "3D Reconstruction",
+      "Spatial Augmented Reality"
+    ],
+    "contact_email": "aliaga@cs.purdue.edu",
+    "description": "The lab focuses on urban visual computing, combining expertise in computer graphics, vision, and AI. Research includes inverse procedural modeling for urban environments, enabling semi-automatic and controllable content creation of large geometric models for simulation and visualization.",
+    "professor_about": "Daniel G. Aliaga is an Associate Professor of Computer Science at Purdue University. He pioneered inverse procedural modeling for urban environments and has published over 160 peer-reviewed papers. His work has been funded by NSF, IARPA, USDA, Google, and Microsoft, spanning applications in sustainability, urban planning, and 3D reconstruction."
+  },
+  {
+    "lab_id": "purdue-cs-atallah",
+    "professor": "Prof. Mikhail J. Atallah",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Information Security",
+      "Algorithms",
+      "Key Management",
+      "Multi-Party Computation",
+      "Secure Data Outsourcing"
+    ],
+    "contact_email": "matallah@purdue.edu",
+    "description": "The lab focuses on information security and algorithms, with groundbreaking contributions in key management and multi-party computation. Research addresses secure data outsourcing and efficient algorithmic operations for data structures and sequence comparisons.",
+    "professor_about": "Mikhail J. Atallah is a Distinguished Professor of Computer Science at Purdue University. He is a Fellow of both ACM and IEEE, and his work has earned the 2015 CCS Test of Time Award and the 2021 ACSAC Test of Time Award. He has received the Arden L. Bement Jr. Award and the Purdue Sigma Xi Faculty Research Award for his contributions to security and algorithms."
+  },
+  {
+    "lab_id": "purdue-cs-basu",
+    "professor": "Prof. Saugata Basu",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Real Algebraic Geometry",
+      "Computational Algebra",
+      "Computational Geometry",
+      "Theoretical Computer Science"
+    ],
+    "contact_email": "sbasu@math.purdue.edu",
+    "description": "The lab focuses on real algebraic geometry, computational algebra and geometry, and theoretical computer science. Research includes computational complexity within o-minimal geometry, Betti number computation for semi-algebraic sets, and polynomial hierarchies.",
+    "professor_about": "Saugata Basu is a Professor of Mathematics and Computer Science at Purdue University with a joint appointment across both departments. He earned his PhD from the Courant Institute at NYU in 1996 and a BTech from IIT. His research establishes connections between computational complexity and algebraic topology, with notable contributions to computing topological properties of geometric structures defined by polynomial inequalities."
+  },
+  {
+    "lab_id": "purdue-cs-bejarano",
+    "professor": "Prof. Andres M. Bejarano Posada",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Computational Geometry",
+      "AI-Driven Education Technology",
+      "Scientific Computing",
+      "Generative AI",
+      "Computer Graphics"
+    ],
+    "contact_email": "abejara@purdue.edu",
+    "description": "The lab focuses on algorithmic and AI-driven solutions to problems in computational geometry, education technology, and scientific computing. Research includes generating topological interlocking configurations and integrating generative AI into computer science education through frameworks like AI-Lab.",
+    "professor_about": "Andres M. Bejarano Posada is an Assistant Teaching Professor of Computer Science at Purdue University. His PhD dissertation focused on generating topological interlocking configurations using geometric methods. He currently works on integrating generative AI into CS education, supported by Purdue Innovation Hub grants, while maintaining active research in computational structures and educational methodologies."
+  },
+  {
+    "lab_id": "purdue-cs-benes",
+    "professor": "Prof. Bedrich Benes",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Procedural Modeling",
+      "Geometry Synthesis",
+      "Simulation of Natural Phenomena",
+      "Additive Manufacturing",
+      "Computer Graphics"
+    ],
+    "contact_email": "bbenes@purdue.edu",
+    "description": "The lab specializes in generative methods for geometry synthesis, with emphasis on procedural and inverse procedural modeling, simulation of natural phenomena, and additive manufacturing. Research spans computational approaches to forest reconstruction, tree generation using machine learning, and terrain formation simulation.",
+    "professor_about": "Bedrich Benes is a Professor of Computer Science and Associate Department Head at Purdue University. He is a senior member of ACM and IEEE, a Eurographics Fellow, and Editor-in-Chief of Elsevier's Graphical Models. With over 200 research papers funded by NSF, NASA, Adobe Research, Intel, and others, his work covers computational geometry synthesis and natural phenomena simulation."
+  },
+  {
+    "lab_id": "purdue-cs-bera",
+    "professor": "Prof. Aniket Bera",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Human-Robot Collaboration",
+      "Motion Planning",
+      "Multi-Agent Systems",
+      "Computer Vision",
+      "Foundation Models for Robotics"
+    ],
+    "contact_email": "ab@cs.purdue.edu",
+    "description": "The IDEAS Lab focuses on how robotic agents plan, perceive, and collaborate safely with people. Research emphasizes motion planning with safety guarantees, intent-aware navigation, multi-robot coordination, and foundation models combining vision, language, and action learning.",
+    "professor_about": "Aniket Bera is an Associate Professor of Computer Science at Purdue University and director of the IDEAS Lab. His research spans human-robot collaboration, digital twins for sim-to-real transfer, and contact-rich manipulation. He collaborates with the Department of Defense, Adobe Research, Intel, Disney Research, and Eli Lilly, and serves as Senior Editor for IEEE Robotics and Automation Letters."
+  },
+  {
+    "lab_id": "purdue-cs-bertino",
+    "professor": "Prof. Elisa Bertino",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Information Security",
+      "Database Systems",
+      "Access Control",
+      "Data Privacy",
+      "Trust Negotiation"
+    ],
+    "contact_email": "bertino@cs.purdue.edu",
+    "description": "The lab spans information security and database systems, combining theoretical and practical approaches across domains including medicine and humanities. Current research focuses on access control systems, secure publishing techniques for XML data, advanced RBAC models, trust negotiation languages, and data mining security.",
+    "professor_about": "Elisa Bertino is the Samuel D. Conte Distinguished Professor of Computer Science at Purdue University. She is both an IEEE Fellow and ACM Fellow, having received the IEEE Computer Society Technical Achievement Award and the Tsutomu Kanai Award. She has served as Chair of ACM SIGSAC and her work bridges information security with database systems across multiple application domains."
+  },
+  {
+    "lab_id": "purdue-cs-bhargava",
+    "professor": "Prof. Bharat K. Bhargava",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Security and Privacy",
+      "Distributed Systems",
+      "Machine Learning",
+      "Data Analytics",
+      "Intelligent Autonomous Systems"
+    ],
+    "contact_email": "bbshail@purdue.edu",
+    "description": "The lab focuses on security and privacy issues in distributed systems, including host authentication, key management, and secure routing. Research also explores intelligent autonomous systems, data analytics, and machine learning applications for critical infrastructure security.",
+    "professor_about": "Bharat K. Bhargava is a Professor of Computer Science at Purdue University with a courtesy appointment in Electrical and Computer Engineering. He is an IEEE Fellow and IETF Fellow who has received seven best paper awards and the 1999 IEEE Technical Achievement Award. He founded the IEEE Symposium on Reliable and Distributed Systems and was inducted into Purdue's Book of Great Teachers in 2003."
+  },
+  {
+    "lab_id": "purdue-cs-blocki",
+    "professor": "Prof. Jeremiah M. Blocki",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Usable Privacy and Security",
+      "Cryptographic Protocols",
+      "Password Security",
+      "Privacy-Preserving Algorithms"
+    ],
+    "contact_email": "jblocki@purdue.edu",
+    "description": "The lab applies fundamental ideas from theoretical computer science to address practical problems in usable privacy and security. Research focuses on developing usable authentication protocols, methods for creating strong passwords, and privacy-preserving algorithms for data analysis.",
+    "professor_about": "Jeremiah M. Blocki is an Associate Professor of Computer Science at Purdue University. He earned his PhD from Carnegie Mellon University in 2014 and joined Purdue in 2016. His research bridges theoretical computer science and practical security, developing cryptographic protocols simple enough for humans to execute and privacy-preserving algorithms for social network and password data analysis."
+  },
+  {
+    "lab_id": "purdue-cs-bullins",
+    "professor": "Prof. Brian Anderson Bullins",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Optimization for Machine Learning",
+      "Higher-Order Methods",
+      "Convex and Nonconvex Optimization",
+      "Distributed Optimization"
+    ],
+    "contact_email": "bbullins@purdue.edu",
+    "description": "The lab specializes in optimization methods for machine learning, focusing on improving matrix estimation techniques that yield novel higher-order methods for convex and nonconvex optimization with provable guarantees. Research also investigates distributed optimization in parallel computing environments.",
+    "professor_about": "Brian Anderson Bullins is an Assistant Professor of Computer Science at Purdue University. He earned his PhD from Princeton University in 2019, advised by Elad Hazan, and previously served as Research Assistant Professor at the Toyota Technological Institute at Chicago. His contributions earned a best paper award at COLT 2021, and he is a Siebel Scholarship recipient and Benjamin N. Duke Scholar."
+  },
+  {
+    "lab_id": "purdue-cs-campbell",
+    "professor": "Prof. Joseph A. Campbell",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Explainable Machine Learning",
+      "Robotics",
+      "Lifelong Learning",
+      "Interpretability",
+      "Theory of Mind"
+    ],
+    "contact_email": "joecamp@purdue.edu",
+    "description": "The CAMP Lab focuses on the intersection of machine learning and robotics, emphasizing explainable machine learning and how intelligent agents can use explanations for self-improvement in lifelong learning settings. Research explores model-level and behavior-level explanations for agent decision-making.",
+    "professor_about": "Joseph A. Campbell is an Assistant Professor of Computer Science at Purdue University, directing the Collaborative AI for Machines and People (CAMP) Lab. Before joining Purdue in Fall 2024, he completed a postdoctoral fellowship at Carnegie Mellon University's Robotics Institute. He earned his PhD, MS, and BS from Arizona State University and spent over five years as an industry software engineer."
+  },
+  {
+    "lab_id": "purdue-cs-celik",
+    "professor": "Prof. Z. Berkay Celik",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Information Security",
+      "Networking and Operating Systems",
+      "Artificial Intelligence",
+      "Machine Learning"
+    ],
+    "contact_email": "zcelik@purdue.edu",
+    "description": "The lab conducts research spanning information security and assurance, networking and operating systems, and artificial intelligence. Work addresses security challenges at the intersection of systems, networks, and AI-driven approaches.",
+    "professor_about": "Z. Berkay Celik is an Associate Professor of Computer Science at Purdue University. He earned his PhD in Computer Science and Engineering from Pennsylvania State University in 2019 and joined the Purdue department in Fall 2019. His research interests span information security, networking and operating systems, and AI/ML applications to security problems."
+  },
+  {
+    "lab_id": "purdue-cs-delaware",
+    "professor": "Prof. Benjamin J. Delaware",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Programming Languages",
+      "Formal Verification",
+      "Mechanized Theorem Provers",
+      "Software Engineering"
+    ],
+    "contact_email": "bendy@purdue.edu",
+    "description": "The lab centers on the design and implementation of programming languages and the development of tools that provide higher assurance with lower effort through the use of mechanized theorem provers. Research emphasizes formal verification methods for creating more reliable software development tools.",
+    "professor_about": "Benjamin J. Delaware is an Assistant Professor of Computer Science at Purdue University. He earned his PhD from The University of Texas at Austin in 2013 and joined Purdue in 2016. His work focuses on leveraging mechanized theorem provers and formal verification to bridge programming language theory with practical software reliability."
+  },
+  {
+    "lab_id": "purdue-cs-dey",
+    "professor": "Prof. Tamal Krishna Dey",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Computational Geometry",
+      "Topological Data Analysis",
+      "Geometric Modeling",
+      "Mesh Generation",
+      "Computer Graphics"
+    ],
+    "contact_email": "tamaldey@purdue.edu",
+    "description": "The lab specializes in computational geometry and topology with applications to topological data analysis, geometric modeling, computer graphics, and mesh generation. Research includes curve and surface reconstruction and Delaunay mesh generation methods.",
+    "professor_about": "Tamal Krishna Dey is a Professor of Computer Science at Purdue University with over 200 scientific publications and two influential books published by Cambridge University Press and CRC Press. He holds fellowships from IEEE, ACM, and the Solid Modeling Association. Before joining Purdue in 2020, he spent two decades at Ohio State University directing the Jyamiti research group and leading an NSF TRIPODS institute on geometric and topological data analysis."
+  },
+  {
+    "lab_id": "purdue-cs-dunsmore",
+    "professor": "Prof. Hubert E. Dunsmore",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Software Engineering",
+      "Software Architecture",
+      "Agile Methods",
+      "Software Metrics",
+      "Object-Oriented Design"
+    ],
+    "contact_email": "dunsmore@purdue.edu",
+    "description": "The lab specializes in software engineering with expertise in architecture and agile development methodologies. Research encompasses software metrics and object-oriented design principles across multiple programming languages including Java, C++, C, and JavaScript.",
+    "professor_about": "Hubert E. Dunsmore is an Associate Professor of Computer Science at Purdue University, having joined the department in 1978. He has received the Charles B. Murphy Outstanding Undergraduate Teacher Award and is a Founding Fellow of the Purdue Teaching Academy. He brings extensive consulting experience in legal and industrial contexts and has co-authored books in software engineering."
+  },
+  {
+    "lab_id": "purdue-cs-fahmy",
+    "professor": "Prof. Sonia A. Fahmy",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Network Architectures",
+      "Network Protocols",
+      "Network Security",
+      "Sensor Networks",
+      "Overlay Networks"
+    ],
+    "contact_email": "fahmy@purdue.edu",
+    "description": "The lab specializes in designing and evaluating network architectures and protocols, with over 100 refereed papers in prestigious venues. Research addresses energy-efficient distributed clustering for sensor networks and overlay multicast network characterization.",
+    "professor_about": "Sonia A. Fahmy is a Professor of Computer Science and Associate Department Head at Purdue University. She is a Fellow of the IEEE and received an NSF CAREER award in 2003. Her research has been funded by NSF, DHS, AT&T, Cisco Systems, Meta, and Juniper Networks, spanning network design, security, and performance evaluation."
+  },
+  {
+    "lab_id": "purdue-cs-fonseca",
+    "professor": "Prof. Pedro Fonseca",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Systems Reliability",
+      "Systems Security",
+      "Operating Systems",
+      "Distributed Systems",
+      "Systematic Testing"
+    ],
+    "contact_email": "pfonseca@purdue.edu",
+    "description": "The lab concentrates on building systems that are both reliable and secure, with emphasis on core software infrastructure. Research operates across empirical studies, scalable testing tools, and system redesign for operating systems, hypervisors, and distributed systems.",
+    "professor_about": "Pedro Fonseca is an Associate Professor of Computer Science at Purdue University. His research spans empirical analysis of reliability and security in real-world systems, development of scalable systematic testing approaches, and system redesign methodologies. His notable publications include work on hypervisor analysis (EuroSys 2018), formal verification of distributed systems (EuroSys 2017), and kernel concurrency bug detection (OSDI 2014)."
+  },
+  {
+    "lab_id": "purdue-cs-garman",
+    "professor": "Prof. Christina L. Garman",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Privacy-Enhancing Technologies",
+      "Applied Cryptography",
+      "Trusted Execution Environments",
+      "Cryptocurrency Privacy"
+    ],
+    "contact_email": "clg@cs.purdue.edu",
+    "description": "The lab centers on analyzing, building, and deploying privacy-enhancing technologies with emphasis on identifying systemic challenges and implementing practical solutions. Research encompasses privacy protocols, security analysis tooling, and hardware-backed primitives utilizing Trusted Execution Environments.",
+    "professor_about": "Christina L. Garman is an Assistant Professor of Computer Science at Purdue University and co-founder of Zcash, a privacy-focused cryptocurrency derived from her Zerocash research. She received an NSF CAREER Award in 2021 and has earned two best paper awards at ACM CCS and an IEEE Security and Privacy Test of Time Award. She earned her PhD from Johns Hopkins University in 2017."
+  },
+  {
+    "lab_id": "purdue-cs-gleich",
+    "professor": "Prof. David F. Gleich",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Scientific Computing",
+      "Data-Driven Algorithms",
+      "Network Analysis",
+      "Bioinformatics",
+      "Large-Scale Graph Computation"
+    ],
+    "contact_email": "dgleich@purdue.edu",
+    "description": "The lab develops novel models and fast large-scale algorithms for data-driven scientific computing, encompassing scientific data analysis, bioinformatics, and network analysis. Work involves matrices, graphs, networks, and tensors, including widely-adopted software tools like MatlabBGL.",
+    "professor_about": "David F. Gleich is the Jyoti and Aditya Mathur Professor of Computer Science at Purdue University. He received the SIAM Outstanding Publication Prize in 2018, a Sloan Research Fellowship in 2016, and an NSF CAREER Award in 2011. He earned his PhD from Stanford University in Computational and Mathematical Engineering in 2009, following a BS from Harvey Mudd College."
+  },
+  {
+    "lab_id": "purdue-cs-grama",
+    "professor": "Prof. Ananth Y. Grama",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Parallel Computing",
+      "Distributed Computing",
+      "Computational Biology",
+      "High-Performance Computing",
+      "Peer-to-Peer Networks"
+    ],
+    "contact_email": "ayg@cs.purdue.edu",
+    "description": "The lab spans parallel and distributed computing architectures, algorithms, and applications. Research includes software for dynamic clustered environments, particle dynamics methods, dense linear system solvers, and fast algorithms for data compression and analysis.",
+    "professor_about": "Ananth Y. Grama is the Samuel D. Conte Professor of Computer Science at Purdue University, having joined the department in 1996. He co-authored the textbook Introduction to Parallel Computing: Design and Analysis of Algorithms. He holds memberships in the American Association for the Advancement of Sciences and Sigma Xi, and his research spans high-performance computing, computational biology, and peer-to-peer network resource management."
+  },
+  {
+    "lab_id": "purdue-cs-hanneke",
+    "professor": "Prof. Stephen Hanneke",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Machine Learning Theory",
+      "Active Learning",
+      "Transfer Learning",
+      "Semi-Supervised Learning",
+      "Sample Complexity"
+    ],
+    "contact_email": "hanneke@purdue.edu",
+    "description": "The lab focuses on reducing the number of training examples sufficient for learning across supervised, semi-supervised, active, and transfer learning domains. Research also examines foundational probabilistic assumptions in learning theory.",
+    "professor_about": "Stephen Hanneke is an Assistant Professor of Computer Science at Purdue University. He earned his PhD in Machine Learning from Carnegie Mellon University in 2009 and a BS in Computer Science from the University of Illinois at Urbana-Champaign. His work develops theoretical foundations for sample-efficient learning methods across multiple learning paradigms including active, transfer, and semi-supervised learning."
+  },
+  {
+    "lab_id": "purdue-cs-jagannathan",
+    "professor": "Prof. Suresh Jagannathan",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Programming Languages",
+      "Compilers",
+      "Concurrent Systems",
+      "Formal Verification",
+      "Distributed Systems"
+    ],
+    "contact_email": "suresh@cs.purdue.edu",
+    "description": "The lab centers on the semantics and implementation of high-level programming languages using type theory, program analysis, and abstract interpretation. Research encompasses compiler optimization, concurrent and distributed systems verification, and memory models for shared data access.",
+    "professor_about": "Suresh Jagannathan is the Samuel D. Conte Professor of Computer Science at Purdue University with a courtesy appointment in Electrical and Computer Engineering. He earned his PhD from MIT in 1989 and joined Purdue in 2002. His work leverages formal methods to enable sound optimizations for concurrent programs and develops certified compilation techniques for expressive concurrent languages."
+  },
+  {
+    "lab_id": "purdue-cs-jeong",
+    "professor": "Prof. Sooyeon Jeong",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Human-Robot Interaction",
+      "Interactive AI Agents",
+      "Personalized Health Technology",
+      "Relational Technologies",
+      "Human-Computer Interaction"
+    ],
+    "contact_email": "sooyeonj@purdue.edu",
+    "description": "The lab designs and deploys interactive AI agents aimed at enhancing people's lives through personalized support tailored to individual needs, traits, and behaviors. Research focuses on developing relational technologies that function as adaptive companions for health, wellbeing, and learning outcomes.",
+    "professor_about": "Sooyeon Jeong is an Assistant Professor of Computer Science at Purdue University, joining in Fall 2023. She earned her PhD in Media Arts and Sciences from MIT in 2022 along with multiple degrees from MIT in electrical engineering and computer science. Her work studies how AI agents establish rapport with users over time through real-world deployments, contributing to improvements in wellbeing and learning."
+  },
+  {
+    "lab_id": "purdue-cs-jung",
+    "professor": "Prof. Changhee Jung",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Compilers",
+      "Computer Architecture",
+      "Memory Safety",
+      "Nonvolatile Memory Systems",
+      "Performance and Security"
+    ],
+    "contact_email": "chjung@purdue.edu",
+    "description": "The lab focuses on compilers and computer architecture with a focus on performance, reliability, and security. Research spans compiler optimization, memory safety mechanisms, speculative computation, and failure atomicity in nonvolatile memory systems.",
+    "professor_about": "Changhee Jung is the Samuel D. Conte Associate Professor of Computer Science at Purdue University. He earned his PhD from Georgia Institute of Technology in 2013 and joined Purdue in 2019 from Virginia Tech. He received an NSF CAREER Award in 2018, and his work spans temporal and spatial memory safety, Linux kernel permission checking, and PMU-based sampling for detecting latent memory errors."
+  },
+  {
+    "lab_id": "purdue-cs-kate",
+    "professor": "Prof. Aniket Kate",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Applied Cryptography",
+      "Blockchain",
+      "Privacy-Preserving Computation",
+      "Distributed Trust",
+      "Anonymous Communication"
+    ],
+    "contact_email": "aniket@purdue.edu",
+    "description": "The lab integrates applied cryptography, distributed computing, and game theory toward developing robust solutions for privacy and distributed trust. Current research includes blockchain technology, distributed cyber-physical systems, and secure computation and communication protocols.",
+    "professor_about": "Aniket Kate is an Associate Professor of Computer Science at Purdue University. He is an applied cryptographer focused on privacy and trust solutions, working at the intersection of cryptography, distributed computing, and game theory. His research addresses blockchains, cryptographic commitments, anonymous communication systems, and equivocation penalties in distributed ledgers."
+  },
+  {
+    "lab_id": "purdue-cs-kazemian",
+    "professor": "Prof. Majid Kazemian",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Computational Biology",
+      "Immunology",
+      "Gene Regulation",
+      "Viral-Associated Cancers",
+      "Single-Cell Genomics"
+    ],
+    "contact_email": "kazemian@purdue.edu",
+    "description": "The lab combines biological assays with computational approaches to investigate disease mechanisms using single-cell and bulk high-throughput sequencing data. Research identifies biological pathways and regulatory mechanisms underlying viral cancers, autoimmune conditions, and infectious diseases.",
+    "professor_about": "Majid Kazemian is an Associate Professor of Computer Science and Biochemistry at Purdue University. He earned his PhD in Computer Science from the University of Illinois in 2012 and joined Purdue in 2017. His work has been published in venues including Science Immunology and Cancer Research, covering topics from COVID-19 immunology to pan-cancer virology and transcriptional regulation."
+  },
+  {
+    "lab_id": "purdue-cs-khanna",
+    "professor": "Prof. Rajiv Khanna",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Machine Learning",
+      "Optimization",
+      "Machine Learning Theory",
+      "Interpretability"
+    ],
+    "contact_email": "rajivak@purdue.edu",
+    "description": "The lab spans various subfields of machine learning including optimization, theory, and interpretability. Research develops principled methods for understanding and improving machine learning systems.",
+    "professor_about": "Rajiv Khanna is an Assistant Professor of Computer Science at Purdue University, joining in Spring 2022. He previously served as a Visiting Faculty Researcher at Google and a postdoctoral scholar at UC Berkeley's Foundations of Data Analytics Institute. He earned his PhD from the University of Texas at Austin in Electrical and Computer Engineering in 2018."
+  },
+  {
+    "lab_id": "purdue-cs-kihara",
+    "professor": "Prof. Daisuke Kihara",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Bioinformatics",
+      "Protein Structure Prediction",
+      "Protein-Protein Docking",
+      "Computational Biology",
+      "Cryo-EM Analysis"
+    ],
+    "contact_email": "dkihara@cs.purdue.edu",
+    "description": "The lab analyzes biological data including genome and protein sequences, protein 3D structures, and pathway data to understand relationships between protein characteristics and function. Research applies deep learning and graph neural networks to cryo-EM map analysis and protein structure prediction.",
+    "professor_about": "Daisuke Kihara is a Professor of Biological Sciences and Computer Science at Purdue University, having joined in 2003. His lab develops computational methods to predict and analyze protein structure and function, protein-protein docking, and pathway structure. His work applies machine learning techniques including deep learning and graph neural networks to challenges in structural biology and bioinformatics."
+  },
+  {
+    "lab_id": "purdue-cs-kingston",
+    "professor": "Prof. Zachary K. Kingston",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Motion Planning",
+      "Robotics",
+      "Manipulation",
+      "Sampling-Based Planning",
+      "Autonomous Systems"
+    ],
+    "contact_email": "zkingston@purdue.edu",
+    "description": "The CoMMA Lab focuses on algorithms, methods, and software for complex robots to make decisions and find feasible or optimal motions. Research specializes in sampling-based motion planning, manifold-constrained planning, and long-horizon multi-modal motion planning.",
+    "professor_about": "Zachary K. Kingston is an Assistant Professor of Computer Science at Purdue University leading the Computational Motion, Manipulation, and Autonomy (CoMMA) Lab. He serves as Associate Editor for IEEE Robotics and Automation Letters and maintains the Open Motion Planning Library (OMPL). His research develops generalizable techniques for robotic motion planning that are fast, efficient, and applicable across diverse robotic systems and environments."
+  },
+  {
+    "lab_id": "purdue-cs-li",
+    "professor": "Prof. Ninghui Li",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Security and Privacy",
+      "Differential Privacy",
+      "Access Control",
+      "Trust Management",
+      "Data Mining"
+    ],
+    "contact_email": "ninghui@purdue.edu",
+    "description": "The lab specializes in security and privacy, with over 200 peer-reviewed papers and more than 27,000 citations. Research bridges differential privacy, access control policies, and trust management systems, including the influential t-Closeness work.",
+    "professor_about": "Ninghui Li is the Samuel D. Conte Professor and Associate Department Head of Computer Science at Purdue University. He is both an ACM Fellow and IEEE Fellow, and served as Editor-in-Chief for ACM Transactions on Privacy and Security and chair of ACM SIGSAC. His t-Closeness paper earned the ICDE 2017 Influential Paper award, and his H-index is 77."
+  },
+  {
+    "lab_id": "purdue-cs-zhiyuan-li",
+    "professor": "Prof. Zhiyuan Li",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Compilers",
+      "Parallel Processing",
+      "Locality Enhancement",
+      "Multicore Optimization",
+      "Embedded Systems"
+    ],
+    "contact_email": "li@cs.purdue.edu",
+    "description": "The lab specializes in compiler techniques for parallel processing and locality enhancement. Research focuses on programming interfaces and compiler support for parallel software development across high-performance computing systems and resource-constrained distributed systems.",
+    "professor_about": "Zhiyuan Li is a Professor of Computer Science at Purdue University with a courtesy appointment in Electrical and Computer Engineering, having joined in 1997. His group develops compiler-based programming environments and runtime systems for resource-constrained distributed systems. His work addresses energy efficiency, reliability, and maintainability challenges in mobile, embedded, and wireless sensor network computing contexts."
+  },
+  {
+    "lab_id": "purdue-cs-liu",
+    "professor": "Prof. Chunwei Liu",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Data Systems",
+      "AI-Powered Pipelines",
+      "Data Compression",
+      "Time Series Analysis",
+      "Cloud Database Systems"
+    ],
+    "contact_email": "chunwei@purdue.edu",
+    "description": "The lab focuses on optimizing data systems for both conventional data analytics and emerging AI-powered pipelines. Research encompasses compound AI systems, privacy-preserving workload generation for cloud databases, and novel compression methods for resource-constrained environments.",
+    "professor_about": "Chunwei Liu is an Assistant Professor of Computer Science at Purdue University, joining in Fall 2025. He completed his PhD at the University of Chicago and was a Postdoctoral Associate at MIT CSAIL's Data Systems Group. His work on data system optimization has involved collaborations with Microsoft, Amazon, Intel, Meta, and Google."
+  },
+  {
+    "lab_id": "purdue-cs-makur",
+    "professor": "Prof. Anuran Makur",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Machine Learning Theory",
+      "Information Theory",
+      "Applied Probability",
+      "Hypothesis Testing",
+      "Mechanism Design"
+    ],
+    "contact_email": "amakur@purdue.edu",
+    "description": "The lab centers on the theory of machine learning, information theory, and applied probability. Research spans hypothesis testing models, information-theoretic channel capacity problems, and mechanism design robustness.",
+    "professor_about": "Anuran Makur is a faculty member in the Department of Computer Science and Elmore Family School of Electrical and Computer Engineering at Purdue University. He received the Thomas M. Cover Dissertation Award from the IEEE Information Theory Society in 2021 and an NSF CAREER Award in 2023. He has also earned multiple thesis awards from MIT and UC Berkeley for his foundational contributions to information theory and machine learning."
+  },
+  {
+    "lab_id": "purdue-cs-rego",
+    "professor": "Prof. Vernon J. Rego",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "High-Performance Distributed Computing",
+      "Parallel Simulation",
+      "Network Protocols",
+      "Software Engineering",
+      "Computational Probability"
+    ],
+    "contact_email": "rego@cs.purdue.edu",
+    "description": "The Parallel Computation and Simulation Laboratory (PacsLab) focuses on software systems for high-performance distributed computation, network protocols, threads systems, and parallel stochastic simulation. Notable projects include the ACES architecture and the IEEE/Gordon Bell Prize-winning EcliPSe system.",
+    "professor_about": "Vernon J. Rego is a Professor of Computer Science at Purdue University directing the PacsLab. His lab has produced notable projects including ACES for multi-threaded distributed computing, the EcliPSe replicated simulation system which earned an IEEE/Gordon Bell Prize, and the ParaSol distributed simulation system. He has received a German Research Council Award for Computer Networking Research and serves as IEEE Transactions on Computers editor."
+  },
+  {
+    "lab_id": "purdue-cs-qureshi",
+    "professor": "Prof. Ahmed Qureshi",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Robot Motion Planning",
+      "Active Perception",
+      "Human-Assisted Manipulation",
+      "Neural Motion Planning",
+      "Multi-Agent Planning"
+    ],
+    "contact_email": "qureshi7@purdue.edu",
+    "description": "The lab focuses on developing robots capable of functioning safely and effectively in dynamic human environments. Research addresses motion planning scalability, active perception, human-assisted manipulation, and dynamic control for healthcare and economic applications.",
+    "professor_about": "Ahmed Qureshi is an Assistant Professor of Computer Science at Purdue University. His team develops physics-informed neural motion planning, multi-agent rearrangement planning, and deformable object manipulation techniques. His work aims to enhance lives and workforce productivity across economic and healthcare sectors through advances in robot planning and control."
+  },
+  {
+    "lab_id": "purdue-cs-rompf",
+    "professor": "Prof. Tiark Rompf",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Programming Languages",
+      "Compilers",
+      "Differentiable Programming",
+      "Query Compilation",
+      "Domain-Specific Languages"
+    ],
+    "contact_email": "tiark@purdue.edu",
+    "description": "The lab focuses on programming languages and compilers, addressing challenges in Software 2.0 where large-scale systems incorporate algorithms learned from data. Research includes differentiable programming, query compilation optimization, and compiled domain-specific languages.",
+    "professor_about": "Tiark Rompf is an Associate Professor of Computer Science at Purdue University and founder/director of the Purdue Center for Programming Principles and Software Systems (PurPL). He earned his PhD from EPFL in Switzerland in 2012. His notable contributions include Lightweight Modular Staging and research on efficient backpropagation mechanisms for differentiable programming."
+  },
+  {
+    "lab_id": "purdue-cs-spafford",
+    "professor": "Prof. Eugene H. Spafford",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Computer Security",
+      "Cybercrime and Ethics",
+      "Technology Policy",
+      "Cyber Resilience",
+      "Trustworthy Computing"
+    ],
+    "contact_email": "spaf@cerias.purdue.edu",
+    "description": "The lab centers on computer and network security, cybercrime and ethics, technology policy, and the social impact of computing. Research spans deceptive security defenses, password security, cyber resilience, and trustworthy computing.",
+    "professor_about": "Eugene H. Spafford is a Professor of Computer Science at Purdue University with courtesy appointments in five additional departments. He founded and directs CERIAS, a university-wide institute for information assurance and security research. His contributions span deceptive security defenses, password security, and educational approaches to information assurance, with broad impact on cybersecurity policy and practice."
+  },
+  {
+    "lab_id": "purdue-me-anasori",
+    "professor": "Prof. Babak Anasori",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "MXenes",
+      "2D Materials",
+      "Advanced Materials Synthesis",
+      "Metal and Ceramic Composites",
+      "Nanomaterials"
+    ],
+    "contact_email": "banasori@purdue.edu",
+    "description": "The lab specializes in the synthesis and characterization of novel MXenes and their metal and ceramic composites. Research includes ordered double-transition metal MXenes and High Entropy MXenes, significantly expanding the tunability of these advanced two-dimensional materials.",
+    "professor_about": "Babak Anasori is a Reilly Rising Star Associate Professor of Materials and Mechanical Engineering at Purdue University with joint appointments in Materials and Mechanical Engineering. He is one of the inventors of MXenes and has been recognized as a Global Highly Cited Researcher from 2019 to 2023. He was identified as the top scholar in Mechanical Engineering in the US over five years by ScholarGPS in 2023, and has received the MRS Postdoctoral Award and the Abraham M. Max Distinguished Professor Award."
+  },
+  {
+    "lab_id": "purdue-me-ardekani",
+    "professor": "Prof. Arezoo Ardekani",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Fluid Dynamics",
+      "Complex Fluids",
+      "Multiphase Flows",
+      "Non-Newtonian Fluids",
+      "Microfluidics",
+      "Soft Matter"
+    ],
+    "contact_email": "ardekani@purdue.edu",
+    "description": "The Complex Flow Lab investigates complex fluid behavior and particle dynamics, with particular focus on biological systems and microfluidic applications. Research spans non-Newtonian fluids, multiphase flow phenomena, viscoelastic jets, and bacterial behavior in flows.",
+    "professor_about": "Arezoo Ardekani is a Professor of Mechanical Engineering and Associate Head for Faculty Affairs at Purdue University. She directs the Complex Flow Lab, studying fluid dynamics, biomaterials, and soft matter systems. Her extensive publication record covers viscoelastic jets, stratified fluid dynamics, bacterial behavior in flows, and particle interactions in viscous media, with applications spanning biomedical engineering and sustainable energy."
+  },
+  {
+    "lab_id": "purdue-me-arrieta",
+    "professor": "Prof. Andres Arrieta",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Adaptive Structures",
+      "Mechanical Metamaterials",
+      "Programmable Structures",
+      "Structural Dynamics",
+      "Nonlinear Vibrations"
+    ],
+    "contact_email": "arrieta@purdue.edu",
+    "description": "The Programmable Structures Lab develops adaptive and programmable materials systems. Research explores how structures can change properties dynamically through mechanical design principles, with applications ranging from morphing aerospace components to energy harvesting and robotic materials.",
+    "professor_about": "Andres Arrieta is the Doug and Cathy Field Rising Star Professor of Mechanical Engineering at Purdue University. He directs the Programmable Structures Lab, focusing on multistable structures, elastic instabilities, and robotic materials. His research bridges fundamental mechanics with practical engineering applications in adaptive structures, mechanical metamaterials, and acoustics."
+  },
+  {
+    "lab_id": "purdue-me-bajaj",
+    "professor": "Prof. Anil K. Bajaj",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Nonlinear Dynamics",
+      "Flow-Induced Vibrations",
+      "Bifurcations and Chaos",
+      "Structural Dynamics",
+      "Impacting Systems"
+    ],
+    "contact_email": "bajaj@purdue.edu",
+    "description": "The lab specializes in modeling of nonlinear systems and structural dynamics, with emphasis on flow-induced vibrations, impacting systems, and bifurcations and chaos. Research addresses complex dynamic behavior in mechanical and micro/nano-scale systems.",
+    "professor_about": "Anil K. Bajaj is the Alpha P. Jamison Professor of Mechanical Engineering at Purdue University. He is an ASME Fellow and has received the Provost's Award for Outstanding Graduate Mentors and multiple Faculty Excellence Awards. He earned his PhD from the University of Minnesota in 1981 and his research spans nonlinear systems modeling, vibration analysis, and transportation applications."
+  },
+  {
+    "lab_id": "purdue-me-bansal",
+    "professor": "Prof. Shubhra Bansal",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Renewable Energy Materials",
+      "Photovoltaics",
+      "Energy Storage",
+      "Semiconductor Reliability",
+      "Advanced Packaging"
+    ],
+    "contact_email": "bansal91@purdue.edu",
+    "description": "The lab spans renewable energy materials including physics-based energy yield predictions, sustainable PV and energy storage materials, and recycling. Research also addresses electro-optical-thermo-mechanical reliability with emphasis on accelerated stress testing and advanced packaging.",
+    "professor_about": "Shubhra Bansal is an Associate Professor of Mechanical Engineering and Materials Engineering at Purdue University. She received an NSF CAREER Award in 2021, a NASA Faculty Fellowship in 2022, and a DOE Technical Excellence Award in 2014. She holds over 15 patents and has received multiple grants from DOE, NSF, DARPA, and NASA for her work on energy materials and semiconductor reliability."
+  },
+  {
+    "lab_id": "purdue-me-barocio",
+    "professor": "Prof. Eduardo Barocio Vaca",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Design and Manufacturing",
+      "Solid Mechanics",
+      "Advanced Materials",
+      "Computational Engineering"
+    ],
+    "contact_email": "ebarocio@purdue.edu",
+    "description": "The lab focuses on design, manufacturing, and solid mechanics with applications in advanced materials and computational engineering. Research addresses challenges in convergent manufacturing and materials processing.",
+    "professor_about": "Eduardo Barocio Vaca is an Assistant Professor of Mechanical Engineering at Purdue University. His research spans design and manufacturing, solid mechanics, and advanced materials, with a focus on computational engineering and convergent manufacturing approaches."
+  },
+  {
+    "lab_id": "purdue-me-barta",
+    "professor": "Prof. Riley Barta",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Heat Pump Technology",
+      "HVAC Systems",
+      "Refrigerant Properties",
+      "Building Energy Efficiency",
+      "Thermal Systems"
+    ],
+    "contact_email": "bartar@purdue.edu",
+    "description": "The lab centers on modeling and analysis of thermal systems with particular emphasis on heat pump technology, air conditioning, refrigeration systems, and refrigerant/lubricant properties. Research contributes to advancing building efficiency and sustainable energy solutions.",
+    "professor_about": "Riley Barta is an Assistant Professor of Mechanical Engineering at Purdue University, having earned both his BS (2016) and PhD (2020) from Purdue. He has received the ASHRAE New Investigator Award, an Alexander von Humboldt Research Fellowship, and the DKV-Young Talent Award for his dissertation work. He is affiliated with the Center for High Performance Buildings."
+  },
+  {
+    "lab_id": "purdue-me-bilionis",
+    "professor": "Prof. Ilias Bilionis",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Uncertainty Quantification",
+      "Bayesian Inference",
+      "Machine Learning",
+      "Inverse Problems",
+      "Materials by Design"
+    ],
+    "contact_email": "ibilion@purdue.edu",
+    "description": "The Predictive Science Lab specializes in computational methods for handling uncertainty in complex systems. Research integrates Bayesian inference, machine learning, and surrogate modeling to solve inverse problems with limited data across materials science, environmental modeling, and multiscale system design.",
+    "professor_about": "Ilias Bilionis is a Professor of Mechanical Engineering at Purdue University directing the Predictive Science Lab. His work focuses on uncertainty propagation, optimal learning, and materials by design using multi-output separable Gaussian processes and stochastic optimization approaches. His research applications span materials science, environmental modeling, high-performance buildings, and human-machine interaction."
+  },
+  {
+    "lab_id": "purdue-me-buckius",
+    "professor": "Prof. Richard O. Buckius",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Radiative Heat Transfer",
+      "Computational Fluid Dynamics",
+      "Flow Measurement",
+      "Lattice Boltzmann Methods",
+      "Optical Properties"
+    ],
+    "contact_email": "rbuckius@purdue.edu",
+    "description": "The lab conducts research spanning computational and experimental fluid mechanics with applications to thermal systems. Work includes developing advanced measurement techniques using MRI for flow analysis, improving numerical methods, and characterizing radiative properties of materials.",
+    "professor_about": "Richard O. Buckius is a Professor of Mechanical Engineering at Purdue University. His research focuses on heat and mass transfer, computational fluid dynamics, and optical properties of materials. His work includes Lattice Boltzmann methods for complex fluid dynamics, infrared characterization of polyimide films, and improved models for radiation absorption in gas mixtures."
+  },
+  {
+    "lab_id": "purdue-me-cai",
+    "professor": "Prof. Jie Cai",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Grid-Interactive Buildings",
+      "HVAC Controls",
+      "Smart Buildings",
+      "Data-Driven Modeling",
+      "Energy Systems"
+    ],
+    "contact_email": "cai40@purdue.edu",
+    "description": "The lab addresses the intersection of building systems and energy management, developing advanced control strategies for HVAC systems while integrating buildings with smart grid technologies. Research combines computational modeling with practical control implementations to optimize thermal and energy performance.",
+    "professor_about": "Jie Cai is an Associate Professor of Mechanical Engineering at Purdue University. His research focuses on grid-interactive building controls, modeling and control of thermal and energy systems, and intelligent control systems. He combines data-driven modeling approaches with practical building energy management to advance smart building technologies."
+  },
+  {
+    "lab_id": "purdue-me-cappelleri",
+    "professor": "Prof. David Cappelleri",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Multi-Scale Robotics",
+      "Micro/Nano Robotics",
+      "Mechatronics",
+      "Biomedical Automation",
+      "MEMS/NEMS"
+    ],
+    "contact_email": "dcappell@purdue.edu",
+    "description": "The Multi-Scale Robotics and Automation Lab focuses on multi-scale robotic manipulation and assembly, mobile micro/nano robotics, and micro/nano aerial vehicles. Research encompasses micro-bio robotics, mechatronics, and automation technologies for life sciences applications.",
+    "professor_about": "David Cappelleri is a Professor of Mechanical Engineering and Assistant Vice President for Research Innovation at Purdue University. He received an NSF CAREER Award in 2012 and directs the Multi-Scale Robotics and Automation Lab. His research on vision-based force sensing, automated assembly systems, and high-throughput biomedical automation spans scales from nanometers to centimeters."
+  },
+  {
+    "lab_id": "purdue-me-castillo",
+    "professor": "Prof. Luciano Castillo",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Turbulent Boundary Layers",
+      "Wind Energy",
+      "Renewable Energy",
+      "Bio-Inspired Micro-Surfaces",
+      "Respiratory Flows"
+    ],
+    "contact_email": "lcastillo@purdue.edu",
+    "description": "The lab emphasizes modeling, experiments, and simulations of turbulent boundary layers and their role in wind energy systems. Research integrates renewable energy with storage technologies and studies wall interactions in respiratory flows, with interests in big data applications and energy equity.",
+    "professor_about": "Luciano Castillo is the Kenninger Professor of Renewable Energy and Power Systems in Mechanical Engineering at Purdue University. He is a Fellow of the American Physical Society and ASME, and a member of Mexico's National Academy of Engineering. His work examines how initial conditions and bio-inspired micro-surfaces influence turbulent flow behavior, with applications spanning wind energy, sustainable energy storage, and biomedical engineering."
+  },
+  {
+    "lab_id": "purdue-me-chiu",
+    "professor": "Prof. George T. C. Chiu",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Dynamic Systems and Control",
+      "Mechatronics",
+      "Digital Printing and Fabrication",
+      "Inkjet Printing",
+      "Embedded Systems"
+    ],
+    "contact_email": "gchiu@purdue.edu",
+    "description": "The lab spans control systems and advanced manufacturing, with expertise in physics-informed modeling for drop-on-demand inkjet printing. Research integrates theoretical control approaches with practical manufacturing applications in precision droplet and nanoscale fabrication technologies.",
+    "professor_about": "George T. C. Chiu is a Professor of Mechanical Engineering at Purdue University with courtesy appointments in Electrical and Computer Engineering and Psychological Sciences. His work focuses on dynamic systems and control, digital and functional printing, motion and vibration control, and real-time embedded systems. His recent research applies reinforcement learning and physics-informed approaches to industrial inkjet and biomaterial fabrication processes."
+  },
+  {
+    "lab_id": "purdue-me-choi",
+    "professor": "Prof. Jong Hyun Choi",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "DNA Nanotechnology",
+      "Molecular Engineering",
+      "Nanomanufacturing",
+      "Bioinspired Design",
+      "2D Materials"
+    ],
+    "contact_email": "jchoi@purdue.edu",
+    "description": "The lab centers on DNA programmable synthetic systems and molecular engineering, designing DNA-based walkers and motors that transport nanoparticles. Research includes DNA origami structures, 2D transition metal dichalcogenides, and applications in biomedical imaging and synthetic biology.",
+    "professor_about": "Jong Hyun Choi is a Professor of Mechanical Engineering at Purdue University. He is an ASME Fellow, received an NSF CAREER Award in 2011, and the Friedrich Wilhelm Bessel Research Award in 2023. His research on DNA-based nanomachines and molecular engineering bridges nanotechnology with biomedical applications and synthetic biology."
+  },
+  {
+    "lab_id": "purdue-me-chortos",
+    "professor": "Prof. Alex Chortos",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Bio-Inspired Electronics",
+      "Soft Actuators",
+      "Wearable Haptics",
+      "Additive Manufacturing",
+      "Stretchable Electronics"
+    ],
+    "contact_email": "achortos@purdue.edu",
+    "description": "The Bionic Interfaces Prototyping Lab develops bio-inspired and mechanically adaptive electronics, multimaterial additive fabrication, and soft actuators. Research emphasizes creating flexible, stretchable electronics for wearable and biomedical applications including artificial muscles and haptics.",
+    "professor_about": "Alex Chortos is an Assistant Professor of Mechanical Engineering at Purdue University leading the Bionic Interfaces Prototyping Lab. His work on 3D-printed dielectric elastomer actuators, bioinspired artificial nerves, and stretchable transistor technologies has been published in journals like Science and Advanced Materials. His research bridges polymer design, deformation sensing, and soft robotics."
+  },
+  {
+    "lab_id": "purdue-me-christov",
+    "professor": "Prof. Ivan C. Christov",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Soft Hydraulics",
+      "Non-Newtonian Fluid Mechanics",
+      "Scientific Machine Learning",
+      "Multiphase Processes",
+      "Computational Fluid Dynamics"
+    ],
+    "contact_email": "christov@purdue.edu",
+    "description": "The Transport: Modeling, Numerics and Theory (TMNT) laboratory studies soft hydraulics, examining how fluids behave in deformable channels. Research combines theoretical analysis with computational approaches to investigate complex fluid phenomena including particulate suspensions and magnetic fluid behavior.",
+    "professor_about": "Ivan C. Christov is an Associate Professor of Mechanical Engineering at Purdue University directing the TMNT laboratory. His work combines non-Newtonian fluid mechanics with scientific machine learning, addressing shear-thinning fluid dynamics and physics-informed neural networks for particle migration. His research applications extend to biomechanical analysis and micro/nanotechnology."
+  },
+  {
+    "lab_id": "purdue-me-ciez",
+    "professor": "Prof. Rebecca Ciez",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Energy Technology Economics",
+      "Lithium-Ion Batteries",
+      "Energy Storage",
+      "Decarbonization",
+      "Fuel Economy Standards"
+    ],
+    "contact_email": "rciez@purdue.edu",
+    "description": "The lab examines interactions and design spaces at the intersection of energy technologies, economics, and decision-making to reduce costs during transitions to decarbonized energy systems. Research addresses battery cost analysis, long-duration storage, and lithium-ion battery recycling.",
+    "professor_about": "Rebecca Ciez is an Assistant Professor of Mechanical Engineering at Purdue University, also affiliated with Environmental and Ecological Engineering. She earned her PhD in Engineering and Public Policy from Carnegie Mellon University in 2018. She holds an NSF Graduate Research Fellowship and an Andlinger Distinguished Postdoctoral Fellowship, with research spanning fuel economy standards and sustainable energy transitions."
+  },
+  {
+    "lab_id": "purdue-me-deng",
+    "professor": "Prof. Xinyan Deng",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Bio-Inspired Robotics",
+      "Aerial Locomotion",
+      "Aquatic Locomotion",
+      "Micro Aerial Vehicles",
+      "Experimental Fluid Mechanics"
+    ],
+    "contact_email": "xdeng@purdue.edu",
+    "description": "The lab focuses on understanding animal locomotion through experimental and computational methods, translating biological principles into robotic systems. Research examines aerodynamic forces in flapping flight, dragonfly wing interactions, and biomimetic robots inspired by insects.",
+    "professor_about": "Xinyan Deng is an Associate Professor of Mechanical Engineering at Purdue University. She earned her PhD from the University of California, Berkeley in 2004. Her research combines principles of aerial and aquatic locomotion in animals with bio-sensing and sensor fusion algorithms to develop biologically inspired micro aerial vehicles and underwater robots."
+  },
+  {
+    "lab_id": "purdue-me-du",
+    "professor": "Prof. Xiaoping Du",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Design Optimization",
+      "Reliability-Based Design",
+      "Uncertainty Quantification",
+      "Machine Learning for Design",
+      "Probabilistic Methods"
+    ],
+    "contact_email": "duxp@purdue.edu",
+    "description": "The lab specializes in engineering design methodologies that incorporate uncertainty and risk assessment. Research focuses on computational approaches for accounting for machine learning prediction errors in design, probabilistic methods for system reliability, and applications to additive manufacturing.",
+    "professor_about": "Xiaoping Du is a Professor of Mechanical Engineering at Purdue University based on the Indianapolis campus. He received the 2023 Trustees' Teaching Award and his research spans design optimization, reliability-based and robust design, and uncertainty quantification for machine learning. His work integrates physics-based models with data-driven techniques for mechanical system design."
+  },
+  {
+    "lab_id": "purdue-me-dyke",
+    "professor": "Prof. Shirley J. Dyke",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Structural Dynamics and Control",
+      "Cyber-Physical Systems",
+      "Machine Vision",
+      "Structural Health Monitoring",
+      "Real-Time Hybrid Simulation"
+    ],
+    "contact_email": "sdyke@purdue.edu",
+    "description": "The Intelligent Infrastructure Systems Lab focuses on structural dynamics and control, cyber-physical systems, and damage detection for infrastructure inspection. Research includes automated crack detection, wireless sensor networks, and real-time hybrid simulation methodologies.",
+    "professor_about": "Shirley J. Dyke is the Donald A. and Patricia A. Coates Professor of Innovation in Mechanical Engineering at Purdue University. She received the NSF PECASE Award in 1998 and serves as Editor-in-Chief of Engineering Structures. She directs the Intelligent Infrastructure Systems Lab and leads the Resilient Extra Terrestrial Habitats Institute, bridging earthquake engineering with extraterrestrial construction applications."
+  },
+  {
+    "lab_id": "purdue-me-gibert",
+    "professor": "Prof. James Gibert",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Vibrations and Nonlinear Dynamics",
+      "Smart Materials",
+      "Non-Pneumatic Tires",
+      "Additive Manufacturing",
+      "Optimization"
+    ],
+    "contact_email": "jgibert@purdue.edu",
+    "description": "The lab spans mechanical vibration analysis and material optimization, with applications to vehicle components and manufacturing processes. Research encompasses nonlinear dynamic systems, piezoelectric and smart materials, ultrasonic additive manufacturing, and foam material behavior.",
+    "professor_about": "James Gibert is an Associate Professor of Mechanical Engineering at Purdue University. His research covers vibrations and nonlinear dynamics, smart material systems, non-pneumatic tires, and optimization of mechanical systems. His work includes flexure joint design, cushioning materials characterization, and advanced manufacturing processes including ultrasonic additive manufacturing."
+  },
+  {
+    "lab_id": "purdue-me-goldenstein",
+    "professor": "Prof. Christopher S. Goldenstein",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Laser Absorption Spectroscopy",
+      "Combustion Diagnostics",
+      "Hypersonic Flows",
+      "Detonation Engines",
+      "Propulsion"
+    ],
+    "contact_email": "csgoldenstein@purdue.edu",
+    "description": "The lab specializes in infrared laser absorption sensors and spectroscopic diagnostics for high-temperature, high-pressure combustion environments. Research develops optical measurement techniques to characterize gas properties in extreme conditions like detonation engines and scramjet combustors.",
+    "professor_about": "Christopher S. Goldenstein is the Avrum and Joyce Gray Rising Star Professor in Entrepreneurship and Innovation in Mechanical Engineering at Purdue University. His research focuses on developing laser-based diagnostic techniques for measuring gas temperature, pressure, velocity, and chemical species in extreme propulsion and combustion environments. His work spans applications from detonation waves to hypersonic flows and sustainable energy systems."
+  },
+  {
+    "lab_id": "purdue-me-gonzalez",
+    "professor": "Prof. Marcial Gonzalez",
+    "department": "School of Mechanical Engineering",
+    "research_areas": [
+      "Granular Systems",
+      "Powder Mechanics",
+      "Continuous Manufacturing",
+      "Pharmaceutical Engineering",
+      "Multi-Scale Modeling"
+    ],
+    "contact_email": "marcial-gonzalez@purdue.edu",
+    "description": "The lab specializes in predictive multi-scale modeling and simulation of microstructure evolution in confined granular systems. Research spans particulate products and processes, continuous manufacturing quality assurance, and material performance in pharmaceutical and energetic applications.",
+    "professor_about": "Marcial Gonzalez is an Associate Professor of Mechanical Engineering at Purdue University and director of the Center for Particulate Products and Processes. His research addresses powder flow, mixing, segregation, consolidation, and compaction for manufacturing applications. His work extends to pharmaceutical strength and stiffness prediction, biomaterial transport, and energetic material behavior under various loading conditions."
+  },
+  {
+    "lab_id": "purdue-aae-alexeenko",
+    "professor": "Prof. Alina Alexeenko",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Rarefied Gas Dynamics",
+      "Boltzmann Equation Methods",
+      "Micropropulsion",
+      "MEMS",
+      "Lyophilization"
+    ],
+    "contact_email": "alexeenk@purdue.edu",
+    "description": "The lab develops fast computational algorithms for solving rarefied flow problems, with applications in high-altitude flight, spacecraft dynamics, MEMS, and biopharmaceutical manufacturing. Research addresses aerodynamic damping, microscale shock propagation, and novel microdevice concepts exploiting rarefied flow physics.",
+    "professor_about": "Alina Alexeenko is a Reilly Professor of Aeronautics and Astronautics and Chemical Engineering at Purdue University. Her research focuses on rarefied gas dynamics and deterministic and stochastic numerical methods for the Boltzmann equation. Her work spans smallsat propulsion, spacecraft contamination, aerothermodynamics, vacuum deposition for nanofabrication, and freeze-drying processes for biopharmaceutical manufacturing."
+  },
+  {
+    "lab_id": "purdue-aae-bane",
+    "professor": "Prof. Sally Bane",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Plasma-Assisted Combustion",
+      "Hypersonic Aerodynamics",
+      "Optical Diagnostics",
+      "Detonation Dynamics",
+      "Flow Control"
+    ],
+    "contact_email": "sbane@purdue.edu",
+    "description": "The lab focuses on nonequilibrium plasmas, hypersonic and supersonic aerodynamics, optical and spectroscopic diagnostics, and combustion and detonation dynamics. Research includes plasma-assisted ignition, rotating detonation engines, and passive/active flow control for high-speed flows.",
+    "professor_about": "Sally Bane is the Director of Laboratory and Hands-On Education and Associate Professor of Aeronautics and Astronautics at Purdue University. Her research spans nanosecond repetitively pulsed plasmas, supersonic boundary layer interactions, and advanced optical measurement methods including PIV and schlieren imaging. She investigates plasma control of high-speed flows and flame acceleration phenomena."
+  },
+  {
+    "lab_id": "purdue-aae-blaisdell",
+    "professor": "Prof. Gregory A. Blaisdell",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Computational Fluid Dynamics",
+      "Turbulence Physics",
+      "Direct Numerical Simulation",
+      "Large-Eddy Simulation",
+      "Turbulent Mixing"
+    ],
+    "contact_email": "blaisdel@purdue.edu",
+    "description": "The lab employs direct numerical simulations and large-eddy simulations to examine transitional and turbulent flows. Research investigates the motion of the largest eddies and develops improved turbulence models for drag reduction, heat transfer, and combustion mixing applications.",
+    "professor_about": "Gregory A. Blaisdell is a Professor of Aeronautics and Astronautics at Purdue University, having been with the school since 1991. He has received the NASA-ASEE Summer Faculty Fellowship and the W.A. Gustafson Teaching Award for outstanding undergraduate instruction. His research addresses practical engineering challenges including drag reduction, enhanced heat transfer, and turbulent mixing in combustion systems through advanced numerical methods."
+  },
+  {
+    "lab_id": "purdue-ie-caldwell",
+    "professor": "Prof. Barrett Caldwell",
+    "department": "Edwardson School of Industrial Engineering",
+    "research_areas": [
+      "Human Factors Engineering",
+      "Distributed Supervisory Control",
+      "Team Coordination",
+      "Human-Computer Interaction"
+    ],
+    "contact_email": "bscaldwell@purdue.edu",
+    "description": "The lab specializes in human factors engineering with a focus on how teams coordinate and perform when using technology systems for supervision and control across distributed environments. Research bridges human behavioral science with complex technical systems.",
+    "professor_about": "Barrett Caldwell is a Professor of Industrial Engineering at Purdue University with a joint appointment in Aeronautics and Astronautics. He holds a PhD in Social Psychology from UC Davis and a BS in Aeronautical and Astronautical Engineering from MIT. His interdisciplinary background positions him to study the intersection of human behavior and complex technical systems in distributed supervisory control scenarios."
+  },
+  {
+    "lab_id": "purdue-aae-collicott",
+    "professor": "Prof. Steven Collicott",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Low-Gravity Fluid Dynamics",
+      "Capillary Fluid Physics",
+      "Optical Diagnostics",
+      "Spacecraft Propellant Management",
+      "Hypersonic Boundary Layers"
+    ],
+    "contact_email": "collicott@purdue.edu",
+    "description": "The lab focuses on experimental fluid mechanics in unique environments, specializing in low-gravity fluid dynamics and capillary effects in weightless environments. Research includes designing experiments for the ISS and developing propellant-gauging services for satellites.",
+    "professor_about": "Steven Collicott is a Professor of Aeronautics and Astronautics at Purdue University, recognized as the leading expert in the use of the Surface Evolver code for engineering applications. His work spans ISS Capillary Fluids Experiments, satellite propellant gauging, and hypersonic boundary layer transition studies using laser interferometry. He bridges theoretical capillary physics with practical aerospace engineering solutions."
+  },
+  {
+    "lab_id": "purdue-aae-corless",
+    "professor": "Prof. Martin J. Corless",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Robust Control",
+      "Uncertain Systems",
+      "Nonlinear Systems",
+      "Flexible Structures",
+      "Control Theory"
+    ],
+    "contact_email": "corless@purdue.edu",
+    "description": "The lab develops tools useful in the analysis and control of systems containing significant uncertainty characterized deterministically. Research addresses both linear and nonlinear systems with applications in aerospace and mechanical systems involving flexible elements.",
+    "professor_about": "Martin J. Corless is a Professor of Aeronautics and Astronautics at Purdue University, having joined the school in 1984. He received the C.T. Sun Research Award in 2011 and the W.A. Gustafson Teaching Award for outstanding undergraduate instruction. His work spans robust control theory for uncertain systems in both continuous and discrete time domains."
+  },
+  {
+    "lab_id": "purdue-aae-crossley",
+    "professor": "Prof. William A. Crossley",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Multidisciplinary Design Optimization",
+      "Aerospace Systems Design",
+      "Design Under Uncertainty",
+      "Environmental Impact of Aviation",
+      "System of Systems"
+    ],
+    "contact_email": "crossley@purdue.edu",
+    "description": "The lab focuses on design methodologies and multidisciplinary design optimization for aerospace engineering systems design problems. Research encompasses aircraft sizing, morphing structures, system-of-systems optimization, and environmental assessments of aviation operations.",
+    "professor_about": "William A. Crossley is the Uhrig and Vournas Head of Aeronautics and Astronautics at Purdue University. His research addresses concurrent aircraft design and resource allocation through decomposition approaches to complex aerospace design challenges. His work spans optimization methods for aerospace systems, design under uncertainty, and environmental impact assessment of aviation."
+  },
+  {
+    "lab_id": "purdue-aae-delaurentis",
+    "professor": "Prof. Daniel DeLaurentis",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "System-of-Systems Engineering",
+      "Urban Air Mobility",
+      "Agent-Based Modeling",
+      "Autonomous Systems Design",
+      "Air Transportation Networks"
+    ],
+    "contact_email": "ddelaure@purdue.edu",
+    "description": "The lab addresses emerging paradigms in integrated product and process development, tackling complex system-of-systems challenges including air transportation networks and urban air mobility. Research employs system dynamics, agent-based modeling, and network analysis for robust design across varying future scenarios.",
+    "professor_about": "Daniel DeLaurentis is the Bruce Reese Professor of Aeronautics and Astronautics at Purdue University. His research tackles increasingly complex system-of-systems challenges including air transportation networks, urban air mobility, and airborne logistics. He employs mathematical modeling and decision frameworks combined with agent-based simulation to characterize uncertainty impacts on aerospace design problems."
+  },
+  {
+    "lab_id": "purdue-aae-frazho",
+    "professor": "Prof. Arthur E. Frazho",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Operator Theory",
+      "Control Systems",
+      "Signal Processing",
+      "H-Infinity Control",
+      "Inverse Scattering"
+    ],
+    "contact_email": "frazho@purdue.edu",
+    "description": "The lab develops and applies operator theory to problems in deterministic and stochastic control systems. Research includes designing models for linear and nonlinear systems, fast recursive algorithms for reduced order models, and pole placement for large space structures.",
+    "professor_about": "Arthur E. Frazho is a Professor of Aeronautics and Astronautics at Purdue University, having joined the school in 1980. He received the W.A. Gustafson Award for teaching in 2006 and has published multiple books on operator theory and control systems. His work spans H-infinity controller reduction, signal processing, and inverse scattering theory for aerospace applications."
+  },
+  {
+    "lab_id": "purdue-aae-frueh",
+    "professor": "Prof. Carolin E. Frueh",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Space Domain Awareness",
+      "Space Traffic Management",
+      "Optical Characterization",
+      "Astrodynamics",
+      "Machine Learning for Space"
+    ],
+    "contact_email": "cfrueh@purdue.edu",
+    "description": "The lab investigates advanced techniques for tracking and characterizing spacecraft and debris in Earth orbit and cislunar space. Research combines optical observations, mathematical modeling, and machine learning to improve Space Domain Awareness capabilities.",
+    "professor_about": "Carolin E. Frueh is the Harold DeGroff Associate Professor of Aeronautics and Astronautics at Purdue University. She is an AAS Fellow and AIAA Associate Fellow, both as of 2024, and received the C.T. Sun Excellence in Research Award in 2024. Her work addresses fragmentation analysis, attitude determination, sensor optimization, and cislunar surveillance strategies for space situational awareness."
+  },
+  {
+    "lab_id": "purdue-aae-garrison",
+    "professor": "Prof. James L. Garrison",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "GNSS Reflectometry",
+      "Earth Remote Sensing",
+      "Bistatic Radar",
+      "Atmospheric Profiling",
+      "Signals of Opportunity"
+    ],
+    "contact_email": "jgarriso@purdue.edu",
+    "description": "The lab pioneers theoretical and experimental work demonstrating that GNSS signal reflections contain valuable information for remote sensing. Research contributed to NASA's CYGNSS mission concept and extends to agricultural, hydrological, and atmospheric applications using Signals of Opportunity.",
+    "professor_about": "James L. Garrison is a Professor of Aeronautics and Astronautics and University Faculty Scholar at Purdue University with a courtesy appointment in Electrical and Computer Engineering. He is a member of NASA's CYGNSS mission science team and collaborates with JPL and Scripps Institution of Oceanography. His foundational research on GNSS reflectometry for ocean and surface sensing spans applications from tropical storm observation to soil moisture and snow/ice property measurement."
+  },
+  {
+    "lab_id": "purdue-aae-hanquist",
+    "professor": "Prof. Kyle Hanquist",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Hypersonic Aerothermodynamics",
+      "Computational Fluid Dynamics",
+      "High Enthalpy Flows",
+      "Chemical Kinetics",
+      "Low-Temperature Plasmas"
+    ],
+    "contact_email": "hanquist@purdue.edu",
+    "description": "The lab focuses on advanced aerospace thermal and aerodynamic phenomena, particularly high-energy flow environments. Research integrates computational modeling with chemical kinetics analysis to address thermal management challenges in hypersonic applications and explores plasma-based solutions.",
+    "professor_about": "Kyle Hanquist is an Assistant Professor of Aeronautics and Astronautics at Purdue University, joining in 2025. He received both the 2025 AFOSR Young Investigator Award and 2025 ONR Young Investigator Award, and was named an AIAA Associate Fellow in 2025. He earned his PhD in Aerospace Engineering from the University of Michigan in 2017."
+  },
+  {
+    "lab_id": "purdue-aae-howell",
+    "professor": "Prof. Kathleen C. Howell",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Orbit Mechanics",
+      "Trajectory Optimization",
+      "Libration Point Orbits",
+      "Spacecraft Dynamics",
+      "Mission Design"
+    ],
+    "contact_email": "howell@purdue.edu",
+    "description": "The lab develops innovative spacecraft trajectory concepts and design tools for complex missions, emphasizing libration point orbits in multi-body gravitational systems. Research applies geometric nonlinear dynamical systems theory to trajectory optimization challenges for lunar and interplanetary missions.",
+    "professor_about": "Kathleen C. Howell is the Hsu Lo Distinguished Professor of Aeronautics and Astronautics at Purdue University. Her research focuses on spacecraft trajectory design using quasi-periodic orbits created by multiple celestial bodies' gravity fields. Her work extends to Earth-orbiting vehicles performing lunar gravity-assist maneuvers, solar sail trajectory design, and formation flying control across various space exploration scenarios."
+  },
+  {
+    "lab_id": "purdue-aae-hwang",
+    "professor": "Prof. Inseok Hwang",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Hybrid Systems",
+      "Unmanned Systems GNC",
+      "Air Traffic Control",
+      "Cyber-Physical Systems",
+      "Multi-Vehicle Coordination"
+    ],
+    "contact_email": "ihwang@purdue.edu",
+    "description": "The lab addresses controlling multiple-vehicle systems as a core challenge in modern control theory. Research integrates path planning, conflict resolution, and cooperative coordination across unmanned aircraft systems, sensor networks, and air traffic management.",
+    "professor_about": "Inseok Hwang is the Paul Stanley Professor of Aeronautics and Astronautics at Purdue University. His research covers hybrid and nonlinear systems, unmanned system guidance and navigation, spacecraft control, and cyber-physical system security. He develops algorithms that balance decentralized operation with system-wide goal achievement in safety-critical aerospace applications."
+  },
+  {
+    "lab_id": "purdue-aae-jewell",
+    "professor": "Prof. Joseph S. Jewell",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Hypersonic Aerothermodynamics",
+      "Boundary Layer Transition",
+      "Wind Tunnel Design",
+      "Spacecraft Re-Entry",
+      "High-Enthalpy Gasdynamics"
+    ],
+    "contact_email": "jsjewell@purdue.edu",
+    "description": "The lab examines boundary layer instabilities and transition mechanisms in extreme flow conditions relevant to vehicle re-entry and advanced propulsion. Research combines experimental measurements with computational analysis, and the lab directs the HYPULSE Wind Tunnel at Purdue Applied Research Institute.",
+    "professor_about": "Joseph S. Jewell is the John Bogdanoff Associate Professor of Aeronautics and Astronautics at Purdue University, currently on leave for Federal service. He directs the HYPULSE Wind Tunnel and specializes in hypersonic boundary layer instability, shock interactions, and laminar-to-turbulent transition phenomena. His research combines non-intrusive diagnostic methods with computational analysis to advance aerospace vehicle design and safety."
+  },
+  {
+    "lab_id": "purdue-aae-kwok",
+    "professor": "Prof. Kawai Kwok",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Deployable Spacecraft",
+      "Multifunctional Composites",
+      "In-Space Manufacturing",
+      "Structural Stability",
+      "Viscoelasticity"
+    ],
+    "contact_email": "kawaik@purdue.edu",
+    "description": "The lab focuses on deployable spacecraft and aircraft concepts, multifunctional composite materials, and in-space manufacturing and assembly. Research includes high-throughput characterization, structural stability analysis, and viscoelastic material behavior.",
+    "professor_about": "Kawai Kwok is an Associate Professor of Aeronautics and Astronautics at Purdue University. He received an NSF CAREER Award in 2022 and the NASA Robert H. Goddard Exceptional Achievement for Engineering Award in 2016. He earned his PhD in Aerospace Engineering from the California Institute of Technology and his research spans deployable structures and advanced composite materials for space applications."
+  },
+  {
+    "lab_id": "purdue-aae-legrand",
+    "professor": "Prof. Keith LeGrand",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Probabilistic Estimation",
+      "Space Domain Awareness",
+      "Multi-Object Tracking",
+      "Bayesian Filtering",
+      "Cislunar Navigation"
+    ],
+    "contact_email": "klegrand@purdue.edu",
+    "description": "The lab develops advanced filtering and information-driven methods to estimate and track objects in dynamic, uncertain space environments. Research emphasizes autonomous sensing and decision-making capabilities for Earth-Moon systems and beyond.",
+    "professor_about": "Keith LeGrand is an Assistant Professor of Aeronautics and Astronautics at Purdue University since 2022. His research focuses on probabilistic estimation, autonomy, and space systems, with emphasis on intelligent sensing and decision-making in complex orbital environments. His work combines random finite set theory with nonlinear estimation techniques for autonomous sensor network tasking and cislunar space object tracking."
+  },
+  {
+    "lab_id": "purdue-aae-lewis",
+    "professor": "Prof. Mark Lewis",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Hypersonics",
+      "High-Speed Flight",
+      "Aerospace Systems"
+    ],
+    "contact_email": "lewis619@purdue.edu",
+    "description": "The lab focuses on hypersonics, the study of flight at speeds exceeding Mach 5 and the associated physical phenomena and engineering challenges. Research addresses advanced aerospace systems operating in extreme velocity regimes.",
+    "professor_about": "Mark Lewis is a member of the School of Aeronautics and Astronautics at Purdue University and serves as CEO of the Purdue Applied Research Institute (PARI). His primary research interest is hypersonics, encompassing the engineering challenges of flight at extreme velocities exceeding Mach 5."
+  },
+  {
+    "lab_id": "purdue-aae-husheng-li",
+    "professor": "Prof. Husheng Li",
+    "department": "School of Aeronautics and Astronautics",
+    "research_areas": [
+      "Autonomous Systems",
+      "UAV Sensing and Communications",
+      "Cyber-Physical Systems",
+      "Statistical Signal Processing",
+      "Wireless Communications"
+    ],
+    "contact_email": "husheng@purdue.edu",
+    "description": "The lab researches autonomous and connected systems, UAV sensing and communications, and joint design of control and communication systems. Previous work includes cyber-physical systems, statistical signal processing, and information theory.",
+    "professor_about": "Husheng Li is a Professor of Aeronautics and Astronautics at Purdue University since 2022. He earned his PhD in Electrical Engineering from Princeton University and his MS and BS from Tsinghua University. His research spans autonomous systems, UAV communications, and the intersection of control theory and communication systems for aerospace applications."
+  },
+  {
+    "lab_id": "purdue-ece-alam",
+    "professor": "Prof. Muhammad Ashraful Alam",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Transistor Physics",
+      "Biosensors",
+      "Solar Cells",
+      "Reliability Physics",
+      "Nanoelectronics"
+    ],
+    "contact_email": "alam@purdue.edu",
+    "description": "The lab focuses on performance and reliability physics of transistors, biosensors, and solar cells to address fundamental challenges in computing, communication, renewable energy, and healthcare. Research bridges device physics with practical applications across multiple technology domains.",
+    "professor_about": "Muhammad Ashraful Alam is the Jai N. Gupta Distinguished Professor of Electrical and Computer Engineering at Purdue University. He earned his PhD from Purdue in 1995 and his research spans microelectronics and nanotechnology. His work on device reliability and transport physics addresses fundamental challenges at the intersection of computing, communication, renewable energy, and healthcare."
+  },
+  {
+    "lab_id": "purdue-ece-aliprantis",
+    "professor": "Prof. Dionysios Aliprantis",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Electric Machines and Drives",
+      "Power Systems",
+      "Renewable Energy Integration",
+      "Electric Transportation",
+      "Smart Grids"
+    ],
+    "contact_email": "dionysios@purdue.edu",
+    "description": "The lab specializes in the design and control of electrical machines, power system analysis, and integration of renewable energy technologies. Research encompasses electric vehicle propulsion systems and modernization of electrical grids for distributed renewable generation and smart grid functionality.",
+    "professor_about": "Dionysios Aliprantis is a Professor of Electrical and Computer Engineering at Purdue University. He earned his PhD from Purdue in 2003 and his diploma from the National Technical University of Athens. His research spans electric machines, power systems, renewable energy integration, and smart grid technologies for sustainable transportation and energy systems."
+  },
+  {
+    "lab_id": "purdue-ece-allebach",
+    "professor": "Prof. Jan P. Allebach",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Electronic Imaging Systems",
+      "Image Processing",
+      "Color Image Processing",
+      "Image Quality",
+      "Document Imaging"
+    ],
+    "contact_email": "allebach@purdue.edu",
+    "description": "The lab centers on electronic imaging systems spanning image capture, rendering, color processing, quality assessment, and document imaging. Research bridges signal processing fundamentals with practical imaging technology applications.",
+    "professor_about": "Jan P. Allebach is a Distinguished Professor Emeritus of Electrical and Computer Engineering at Purdue University. He earned his PhD from Princeton University in 1976. His work focuses on the complete imaging pipeline from capture to display, with expertise in color image processing, image quality metrics, and document imaging systems."
+  },
+  {
+    "lab_id": "purdue-ece-appenzeller",
+    "professor": "Prof. Joerg Appenzeller",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Nanoelectronics",
+      "Low-Dimensional Device Physics",
+      "Novel Transistor Concepts",
+      "Nanomaterials",
+      "Nano-Interfaces"
+    ],
+    "contact_email": "appenzeller@purdue.edu",
+    "description": "The lab focuses on device and transport physics of low-dimensional systems with emphasis on experimental verification of novel device concepts for improved transistor performance. Research explores nano-materials and nano-interfaces for future nanoelectronics applications.",
+    "professor_about": "Joerg Appenzeller is the Barry M. and Patricia L. Epstein Professor of Electrical and Computer Engineering at Purdue University. His research centers on the physics of low-dimensional systems and novel transistor device concepts. He works at the intersection of fundamental device physics and practical semiconductor advancement through nano-materials and nano-interfaces for next-generation electronics."
+  },
+  {
+    "lab_id": "purdue-ece-back",
+    "professor": "Prof. Doosan Back",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Semiconductor Fabrication",
+      "Advanced Packaging",
+      "Heterogeneous Integration",
+      "Micro/Nano Electronic Devices"
+    ],
+    "contact_email": "dback@purdue.edu",
+    "description": "The lab focuses on semiconductor manufacturing and processing, encompassing advanced techniques for integrating diverse materials and components at miniaturized scales. Research emphasizes innovative packaging solutions for heterogeneous systems in modern electronic devices.",
+    "professor_about": "Doosan Back is an Assistant Professor of Engineering Practice in the Elmore Family School of Electrical and Computer Engineering at Purdue University. His research focuses on semiconductor fabrication and manufacturing, advanced packaging, and heterogeneous integration of micro/nano electronic devices. He develops innovative approaches for integrating diverse materials and components at miniaturized scales."
+  },
+  {
+    "lab_id": "purdue-ece-badesha",
+    "professor": "Prof. Santokh Badesha",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Image Generation and Processing",
+      "Intellectual Property Management",
+      "Microelectronics",
+      "Nanotechnology"
+    ],
+    "contact_email": "sbadesha@purdue.edu",
+    "description": "The lab focuses on image generation and processing, intellectual property generation and management, and corporate partnerships. Research spans the intersection of advanced imaging technologies and microelectronics/nanotechnology applications.",
+    "professor_about": "Santokh Badesha is a Distinguished Professor of Electrical and Computer Engineering at Purdue University. His research encompasses image generation and processing, intellectual property development, and corporate partnership strategies. His work bridges advanced imaging technologies with practical applications in the microelectronics and nanotechnology fields."
+  },
+  {
+    "lab_id": "purdue-ece-bagchi",
+    "professor": "Prof. Saurabh Bagchi",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Dependable Distributed Systems",
+      "Secure Autonomy",
+      "Embedded Wireless Networks",
+      "Predictable Machine Learning"
+    ],
+    "contact_email": "sbagchi@purdue.edu",
+    "description": "The lab focuses on dependable distributed systems, secure autonomy, embedded wireless networks, and predictable machine learning. Research spans computer engineering and communications, addressing reliability and security in networked computing systems.",
+    "professor_about": "Saurabh Bagchi is a Professor of Electrical and Computer Engineering at Purdue University, serving as Area Chair and Director for Corporate Partnership. He earned his PhD from the University of Illinois at Urbana-Champaign in 2001. His research bridges distributed systems dependability with machine learning predictability, addressing security challenges in autonomous and embedded wireless systems."
+  },
+  {
+    "lab_id": "purdue-ece-bell",
+    "professor": "Prof. Mark R. Bell",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Information Theory",
+      "Communication Systems",
+      "Radar Signal Processing",
+      "Free-Space Optical Communications",
+      "Signal Theory"
+    ],
+    "contact_email": "mrb@purdue.edu",
+    "description": "The lab focuses on information theory, communication theory and systems, radar systems and signal processing, and free-space optical communications. Research addresses fundamental signal theory challenges across multiple communication modalities.",
+    "professor_about": "Mark R. Bell is a Professor of Electrical and Computer Engineering at Purdue University. He earned his PhD from the California Institute of Technology in 1988. His research spans information theory, communication systems, radar signal processing, and free-space optical communications, contributing to advances across multiple communication technology domains."
+  },
+  {
+    "lab_id": "purdue-ece-bhave",
+    "professor": "Prof. Sunil A. Bhave",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "MEMS",
+      "Micro-Electro-Mechanical Systems",
+      "Fields and Optics",
+      "Oxide-Based Devices",
+      "Nanotechnology"
+    ],
+    "contact_email": "bhave@purdue.edu",
+    "description": "The lab specializes in MEMS technology with emphasis on oxide-based devices, exploring applications at the intersection of fields and optics and microelectronics/nanotechnology. Research develops novel micro-electro-mechanical systems for sensing and signal processing.",
+    "professor_about": "Sunil A. Bhave is a Professor in the Elmore Family School of Electrical and Computer Engineering at Purdue University. He earned both his BS and PhD from the University of California, Berkeley in 2004. His research group focuses on oxide-based MEMS devices at the intersection of fields and optics and microelectronics/nanotechnology."
+  },
+  {
+    "lab_id": "purdue-ece-boltasseva",
+    "professor": "Prof. Alexandra Boltasseva",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Nanophotonics",
+      "Quantum Photonics",
+      "Plasmonics",
+      "Metamaterials",
+      "Machine Learning for Optics"
+    ],
+    "contact_email": "aeb@purdue.edu",
+    "description": "The lab bridges optical engineering and advanced materials science, combining nanoscale fabrication with machine learning to develop novel photonic devices. Research spans nanophotonics, quantum photonics, plasmonics, metamaterials, and integrated optics.",
+    "professor_about": "Alexandra Boltasseva is the Ron and Dotty Garvin Tonjes Distinguished Professor of Electrical and Computer Engineering at Purdue University. She earned her PhD from the Technical University of Denmark in 2004. Her work combines nanofabrication techniques with machine learning applications to develop systems capable of manipulating light at the quantum level for advanced photonic devices."
+  },
+  {
+    "lab_id": "purdue-ece-bouman",
+    "professor": "Prof. Charles A. Bouman",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Image Processing",
+      "Statistical Image Modeling",
+      "Tomography",
+      "Medical Imaging",
+      "Pattern Recognition"
+    ],
+    "contact_email": "bouman@purdue.edu",
+    "description": "The lab focuses on image processing, statistical image modeling, pattern recognition, image printing and display, tomography and inverse problems, and medical imaging. Research spans the complete pipeline from image formation to reconstruction and analysis.",
+    "professor_about": "Charles A. Bouman is the Showalter Professor in the Elmore Family School of Electrical and Computer Engineering at Purdue University with a joint appointment in Biomedical Engineering. He earned his PhD from Princeton University in 1989. His research on statistical image modeling and tomographic reconstruction methods addresses challenges across medical imaging, industrial inspection, and computational photography."
+  },
+  {
+    "lab_id": "purdue-ece-chan",
+    "professor": "Prof. Stanley Chan",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Image Restoration",
+      "Computational Photography",
+      "Photon Limited Imaging",
+      "Statistical Signal Processing"
+    ],
+    "contact_email": "stanchan@purdue.edu",
+    "description": "The lab specializes in computational approaches to imaging and signal processing, focusing on image restoration, computational photography, photon limited imaging, and statistical signal processing. Research develops advanced algorithms for challenging imaging conditions.",
+    "professor_about": "Stanley Chan is the Elmore Professor of Electrical and Computer Engineering at Purdue University, serving as Area Chair for Communications, Networking, Signal and Image Processing. He earned his PhD from UC San Diego in 2011 and completed a postdoctoral fellowship at Harvard University. His research group develops computational methods for image restoration and photography under extreme conditions."
+  },
+  {
+    "lab_id": "purdue-ece-chen-zhihong",
+    "professor": "Prof. Zhihong Chen",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Nanomaterials",
+      "Nanoelectronics",
+      "Nano-Device Fabrication",
+      "Nano-Circuit Design",
+      "Nanotechnology"
+    ],
+    "contact_email": "zhchen@purdue.edu",
+    "description": "The lab explores physical properties of nano-materials and designs novel nano-devices and circuits for various application fields. Research focuses on controlling and manipulating material properties to fit nanoelectronic application needs.",
+    "professor_about": "Zhihong Chen is a Reilly Professor of Electrical and Computer Engineering and Director of the Birck Nanotechnology Center at Purdue University. She earned her PhD in Physics from the University of Florida in 2003. Her research spans the exploration of nano-material properties, nano-device design and fabrication, and the development of circuits for next-generation electronic applications."
+  },
+  {
+    "lab_id": "purdue-ece-datta",
+    "professor": "Prof. Supriyo Datta",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Spin Electronics",
+      "Nanoscale Energy Conversion",
+      "Molecular Electronics",
+      "Mesoscopic Superconductivity",
+      "Quantum Transport"
+    ],
+    "contact_email": "datta@purdue.edu",
+    "description": "The lab specializes in quantum transport phenomena and nanoscale device physics, bridging fundamental condensed matter physics with practical applications. Research encompasses spin electronics, nanoscale energy conversion, molecular electronics, and mesoscopic superconductivity.",
+    "professor_about": "Supriyo Datta is the Thomas Duncan Distinguished Professor of Electrical and Computer Engineering at Purdue University. He earned his PhD from the University of Illinois in 1979. His work explores how electrons behave in extremely small structures, contributing foundational understanding to spintronics, molecular electronics, and superconducting device physics."
+  },
+  {
+    "lab_id": "purdue-ece-ding",
+    "professor": "Prof. Yi Ding",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "AI/ML Systems",
+      "Sustainable Computing",
+      "Computer Architecture",
+      "Machine Learning",
+      "Healthcare Computing"
+    ],
+    "contact_email": "yiding@purdue.edu",
+    "description": "The lab focuses on AI/ML systems, sustainable computing, computer systems, computer architecture, and machine learning with healthcare applications. Research develops efficient and sustainable computing infrastructure for AI workloads.",
+    "professor_about": "Yi Ding is an Assistant Professor of Electrical and Computer Engineering at Purdue University. He completed postdoctoral work at MIT in 2023 and earned his PhD from the University of Chicago in 2020. His research spans the intersection of artificial intelligence systems, sustainable computing, and healthcare applications, addressing computer architecture challenges for modern ML workloads."
+  },
+  {
+    "lab_id": "purdue-ece-guo",
+    "professor": "Prof. Qi Guo",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Computational Imaging",
+      "Computer Vision",
+      "Machine Learning",
+      "Optics",
+      "Signal Processing"
+    ],
+    "contact_email": "qiguo@purdue.edu",
+    "description": "The lab focuses on computational imaging, computer vision, machine learning, and optics. Research develops computational methods for imaging and vision applications, leveraging machine learning and optical principles to advance signal and image processing.",
+    "professor_about": "Qi Guo is an Assistant Professor of Electrical and Computer Engineering at Purdue University. His research centers on developing computational methods for imaging and vision applications. He combines machine learning, optics, and signal processing to create novel imaging systems and algorithms for challenging visual computing problems."
+  },
+  {
+    "lab_id": "purdue-ece-gupta-sumeet",
+    "professor": "Prof. Sumeet Gupta",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Device-Circuit Co-Design",
+      "Spintronics",
+      "Low Power VLSI",
+      "Non-Boolean Computing",
+      "Emerging Nanotechnologies"
+    ],
+    "contact_email": "guptask@purdue.edu",
+    "description": "The lab focuses on device-circuit co-design in emerging nanotechnologies for Boolean and non-Boolean computing. Research encompasses spintronics, low power variation tolerant VLSI design, and device-circuit modeling for next-generation computing architectures.",
+    "professor_about": "Sumeet Gupta is the Elmore Associate Professor of Electrical and Computer Engineering at Purdue University. He earned his PhD from Purdue in 2012 and his BTech from IIT Delhi. His research bridges emerging nanotechnologies with circuit design, developing novel computing paradigms using spintronics and other non-traditional device technologies for energy-efficient computation."
+  },
+  {
+    "lab_id": "purdue-ece-gupta-vijay",
+    "professor": "Prof. Vijay Gupta",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Control Theory and Machine Learning",
+      "Distributed Estimation",
+      "Cyber-Physical-Human Systems",
+      "Game Theory",
+      "Power Grid and Transportation"
+    ],
+    "contact_email": "gupta869@purdue.edu",
+    "description": "The lab investigates the intersection of control theory and machine learning, distributed estimation and decision making, and cyber-physical-human systems. Research encompasses signal processing, game theory, and applications to power grids and transportation networks.",
+    "professor_about": "Vijay Gupta is the Elmore Professor of Electrical and Computer Engineering and Associate Head of Graduate and Professional Programs at Purdue University. His research bridges control systems and AI methodologies with emphasis on distributed computational approaches in complex networked environments. His work spans infrastructure systems including electrical grids and transportation networks alongside human-centered cyber-physical systems."
+  },
+  {
+    "lab_id": "purdue-ece-hu-jianghai",
+    "professor": "Prof. Jianghai Hu",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Hybrid Systems",
+      "Multi-Agent Systems",
+      "Sensor Networks",
+      "Energy Efficient Buildings",
+      "Control and Optimization"
+    ],
+    "contact_email": "jianghai@purdue.edu",
+    "description": "The lab focuses on hybrid systems, multi-agent systems, control of uncertain systems, and control applications in sensor networks and energy efficient building management. Research addresses general control and optimization theory with practical system applications.",
+    "professor_about": "Jianghai Hu is a Professor of Electrical and Computer Engineering at Purdue University. He earned his PhD from the University of California at Berkeley in 2003. His research spans hybrid systems, multi-agent coordination, and control applications from sensor networks to energy-efficient building management, combining theoretical advances in control and optimization with practical system implementations."
+  },
+  {
+    "lab_id": "purdue-ece-hu-charlie",
+    "professor": "Prof. Y. Charlie Hu",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "research_areas": [
+      "Distributed Systems",
+      "Operating Systems",
+      "Networking",
+      "Parallel Computing"
+    ],
+    "contact_email": "ychu@purdue.edu",
+    "description": "The lab focuses on distributed systems, operating systems, networking, and parallel computing. Research addresses fundamental challenges in building efficient and scalable computing infrastructure across distributed environments.",
+    "professor_about": "Y. Charlie Hu is the Michael and Katherine Birck Professor of Electrical and Computer Engineering at Purdue University. He earned his PhD in Computer Science from Harvard University in 1997 and holds degrees from Yale University and the University of Science and Technology of China. His research spans distributed systems, operating systems, networking, and parallel computing."
+  },
+  {
+    "lab_id": "purdue-cs-szpankowski",
+    "professor": "Prof. Wojciech Szpankowski",
+    "department": "Department of Computer Science",
+    "research_areas": [
+      "Analysis of Algorithms",
+      "Information Theory",
+      "Bioinformatics",
+      "Analytic Combinatorics",
+      "Distributed Systems"
+    ],
+    "contact_email": "spa@cs.purdue.edu",
+    "description": "The lab encompasses analysis of algorithms, information theory, bioinformatics, analytic combinatorics, and stability problems of distributed systems. Research includes directing an NSF Science and Technology Center focused on information science.",
+    "professor_about": "Wojciech Szpankowski is the Saul Rosen Distinguished Professor of Computer Science at Purdue University with a courtesy appointment in Electrical and Computer Engineering. He is an IEEE Fellow, Erskine Fellow, and recipient of the 2010 Humboldt Research Award. He founded the Institute for Science of Information in 2008 and directs an NSF Science and Technology Center, with authored monographs on average case algorithm analysis."
   }
 ]

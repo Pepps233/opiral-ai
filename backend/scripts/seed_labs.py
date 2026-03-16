@@ -25,9 +25,9 @@ async def seed():
         # Upsert into Supabase (includes professor_about)
         supabase.table("labs").upsert(lab).execute()
 
-        # Build embedding text from all semantic fields
+        # Build embedding text — exclude professor name and contact email
+        # to avoid matching on personal identifiers rather than research content
         text = " ".join([
-            lab["professor"],
             lab["department"],
             " ".join(lab["research_areas"]),
             lab.get("description", ""),
