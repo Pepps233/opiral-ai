@@ -1,5 +1,4 @@
 from pydantic_settings import BaseSettings
-from pydantic import field_validator
 from typing import List
 
 
@@ -18,20 +17,11 @@ class Settings(BaseSettings):
     DAILY_EMAIL_LIMIT: int = 3
     SENTRY_DSN: str = ""
     ENVIRONMENT: str = "development"
-    CORS_ORIGINS: List[str] = ["http://localhost:3000"]
+    CORS_ORIGINS_STR: str = "http://localhost:3000"
 
-    @field_validator("CORS_ORIGINS", mode="before")
-    @classmethod
-    def parse_cors_origins(cls, v: object) -> List[str]:
-        if isinstance(v, list):
-            return v
-        if isinstance(v, str):
-            v = v.strip()
-            if v.startswith("["):
-                import json
-                return json.loads(v)
-            return [origin.strip() for origin in v.split(",") if origin.strip()]
-        return v
+    @property
+    def CORS_ORIGINS(self) -> List[str]:
+        return [o.strip() for o in self.CORS_ORIGINS_STR.split(",") if o.strip()]
 
     class Config:
         env_file = ".env"
